@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/hero-bg.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-content {
+  max-width: 600px;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+.explore-btn {
+  background: #00796b;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+}
+.explore-btn:hover {
+  background: #005b4f;
+}
+
+/* Sections */
+.section {
+  padding: 80px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.section .content {
+  flex: 1;
+  max-width: 50%;
+}
+.section-img {
+  width: 45%;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.feature-card img {
+  width: 400px;
+  height: auto;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Steps Section */
+  .steps-grid {
+    flex-direction: column; /* Stack elements on smaller screens */
+    text-align: center;
+  }
+  .steps-swiper {
+    margin-bottom: 20px; /* Space between main Swiper and other content */
+  }
+
+  .step-card {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    width: 100%;
+    max-width: 450px; /* Adjust size for smaller screens */
+    height: auto;
+    margin: 0 auto; /* Center the card itself */
+  }
+
+  .step-media {
+    width: 150%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block; /* Ensure the image is treated as a block element */
+  }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 121, 107, 0.8);
+  color: white;
+  width: 39.7%;
+  padding: 15px;
+  text-align: center;
+}
+
+
+/* Testimonials */
+.testimonials-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.testimonial-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section .content, .section-img {
+    max-width: 100%;
+  }
+  .features-grid, .steps-grid, .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

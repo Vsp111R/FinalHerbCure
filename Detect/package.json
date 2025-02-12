@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "pdf2image": "^1.2.3"
+  }
+}

@@ -1,0 +1,113 @@
+/* Footer Styles */
+.footer {
+  background-color: #00796b; /* Dark blue background */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.footer-section h4 {
+  color: #f7b74f;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Subscribe Box */
+.subscribe-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.subscribe-container h4 {
+  color: #f7b74f;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+/* Input Field */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: white;
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 30px 0 0 30px;
+}
+
+.mail-icon {
+  color: #002B11;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.subscribe-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 0.9rem;
+  color: #002B11;
+  padding: 8px;
+}
+
+/* Subscribe Button */
+.subscribe-box button {
+  background-color: #f7b74f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.subscribe-box button:hover {
+  background-color: #3D6BEA;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}

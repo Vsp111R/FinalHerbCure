@@ -1,0 +1,32 @@
+/* Ensure page fills the viewport and footer stays at the bottom */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes page fill full height */
+}
+
+/* Push footer down */
+.content {
+  flex: 1; /* Pushes footer to the bottom */
+}
+
+/* Footer styles */
+.footer-bg {
+  background-color: #143d35;
+  color: white;
+  padding: 2rem 0;
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+

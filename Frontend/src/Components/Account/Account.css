@@ -1,0 +1,85 @@
+/* Account Page Styles */
+.account-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .account-header h2 {
+    font-size: 28px;
+    color: #2d6a4f; /* Pitch Green */
+  }
+  
+  .account-header p {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .account-info {
+    margin-bottom: 30px;
+  }
+  
+  .info-item {
+    margin-bottom: 15px;
+  }
+  
+  .info-item label {
+    display: block;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .info-item input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .update-btn {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .update-btn:hover {
+    background-color: #16a085;
+  }
+  
+  .order-history {
+    margin-top: 30px;
+  }
+  
+  .order-history h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .order-history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-history li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+  

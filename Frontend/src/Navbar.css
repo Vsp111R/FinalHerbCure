@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Top Strip */
+.top-strip {
+  background-color:#f1f8f6  ; /* Pitch Green */
+  color: #00796b;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#00796b;
+  padding: 10px 40px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-left .logo img {
+  height: 50px;
+}
+
+/* Navigation Links */
+.nav-links-div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-item {
+  position: relative;
+  padding: 10px 15px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #ffffff; /* Pitch Green */
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links:hover {
+  color: #ffaa22; /* Light Green */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none; /* Prevent accidental hiding */
+}
+
+.nav-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.dropdown-menu a {
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #002B11; /* Pitch Green */
+  font-size: 14px;
+  transition: background 0.3s ease;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Account Icon */
+.navbar-right .account-icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: #002B11; /* Pitch Green */
+  transition: color 0.3s ease;
+}
+
+.navbar-right .account-icon:hover {
+  color: #88C057; /* Light Green */
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #002B11; /* Pitch Green */
+  font-size: 24px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links-div {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
+
+  .show-menu {
+    display: flex;
+  }
+
+  .nav-item {
+    text-align: center;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .dropdown-menu a {
+    background: none;
+  }
+}

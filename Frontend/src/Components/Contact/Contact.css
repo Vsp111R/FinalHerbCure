@@ -1,0 +1,108 @@
+/* General Styling */
+.contact-wrapper {
+  background-color: #f5f8fc; /* Light blue background like Tata's */
+  padding: 50px 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Container */
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  background-color: #002b11e4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.contact-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* Tata-style deep blue */
+  margin-bottom: 25px;
+}
+
+/* Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Contact Cards */
+.contact-card {
+  background-color: #83f81d2b; /* Tata’s soft blue shade */
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #dce4f0; /* Subtle border */
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.contact-card:hover {
+  background-color: #1fe3f0;
+  transform: translateY(-2px);
+}
+
+/* Card Headings */
+.contact-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+/* Contact Info */
+.contact-card p {
+  font-size: 14px;
+  color: #88c057;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+}
+
+/* Icons */
+.contact-card .icon {
+  color: #e6a500;
+  width: 18px;
+  height: 18px;
+}
+
+/* Links */
+.contact-card a {
+  color: #88c057;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #88c0578d;
+  border-radius: 8px;
+}
+
+.contact-address {
+  width: 48%;
+}
+
+.contact-address h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-address p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}

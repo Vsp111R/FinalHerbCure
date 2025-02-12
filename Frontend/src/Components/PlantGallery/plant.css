@@ -1,0 +1,91 @@
+/* .swiper-button-next,
+.swiper-button-prev {
+  color: #1dd9b3; 
+}
+
+@media (max-width: 768px) {
+    .swiper-slide {
+      flex-direction: column !important; 
+      align-items: center !important;
+    }
+  
+    .swiper-slide > div {
+      margin-bottom: 20px !important; 
+      width: 100% !important;
+    }
+  
+    .swiper-slide > div:first-child {
+      order: 2 !important; 
+    }
+  
+    .swiper-slide > div:last-child {
+      order: 1 !important; 
+    }
+  }
+   */
+   .swiper-button-next,
+   .swiper-button-prev {
+     color: #1dd9b3 !important;
+   }
+   
+   /* Responsive Swiper Slide */
+   @media (max-width: 1024px) {
+     .swiper-slide {
+       display: flex !important;
+       flex-direction: column !important;
+       align-items: center !important;
+       text-align: center !important;
+     }
+   
+     .swiper-slide > div {
+       width: 100% !important;
+       margin-bottom: 20px !important;
+     }
+   
+     .swiper-slide > div:first-child {
+       order: 2 !important; /* Move content below the image */
+     }
+   
+     .swiper-slide > div:last-child {
+       order: 1 !important; /* Place the image on top */
+     }
+   }
+   
+   /* Adjustments for smaller screens */
+   @media (max-width: 600px) {
+     .swiper-button-next,
+     .swiper-button-prev {
+       display: none !important; /* Hide arrows on small screens */
+     }
+   
+     .swiper-slide {
+       padding: 10px !important;
+     }
+   
+     .swiper-slide > div {
+       margin-bottom: 15px !important;
+     }
+   }
+   
+   .plant-info-btn-div {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .plant-info-btn {
+    display: inline-block;
+    background-color: #4CAF50; /* Green shade */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .plant-info-btn:hover {
+    background-color: #388E3C; /* Darker green */
+    transform: scale(1.05);
+  }
+  
