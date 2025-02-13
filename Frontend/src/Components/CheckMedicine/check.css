@@ -1,5 +1,4 @@
-/* check.css */
-
+/* 
 .image-container {
   display: flex;
   flex-direction: column;
@@ -70,7 +69,6 @@ h2 {
   background-color: #1b4332 !important;
 }
 
-/* Responsive Design */
 @media (max-width: 830px) {
   .image-container {
     width: 80%;
@@ -107,5 +105,203 @@ h2 {
   .process-btn {
     font-size: 16px !important;
     padding: 10px !important;
+  }
+} */
+
+.image-container {
+  background: #e1fae8; /* Light green background */
+  border-radius: 12px;
+  padding: 4rem;
+  width: 800px;
+  margin: auto;
+  margin-top: 3rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image-container h2 {
+  color: #166534; /* Dark green */
+  font-weight: bold;
+  font-size: 35px !important;
+  margin-bottom: 25px;
+}
+
+/* Upload box styling */
+.upload-box {
+  border: 2px dashed #166534;
+  border-radius: 10px;
+  padding: 50px;
+  background: #f0fff4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.upload-box:hover {
+  background: #d9fed9;
+  border-color: #0f3d21;
+}
+
+.upload-box p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Preview image styling */
+.image-preview {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Camera container */
+.camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding: 1rem;
+}
+
+/* Flexbox container for buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 10px; /* Space between buttons and video */
+}
+
+/* Ensure buttons are evenly spaced */
+.button-container button {
+  flex: 1; /* Make buttons take equal width */
+  max-width: 500px; /* Adjust max-width as needed */
+}
+
+/* Style for video section */
+.camera-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Optional: Make the video responsive */
+.video-preview {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+
+.take-photo,.capture {
+  font-size: 18px !important;
+  width: 100% !important;
+  font-weight: 600 !important;
+  color: #fff;
+  background-color: #166736 !important;
+  transition: 0.3sec ease !important;
+  margin-top: 1.5rem !important;
+}
+
+.take-photo,.capture:hover {
+  background-color: #1a8143 !important;
+}
+
+.video-preview {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 2px solid #166534;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.process-btn {
+  background: #14532D;
+  color: white;
+  font-weight: 550 !important;
+  margin-top: 20px !important;
+  font-size: 20px !important;
+  transition: 0.3s ease !important;
+}
+
+.process-btn.Mui-disabled {
+  font-weight: 550 !important;
+  background-color: #2e7d32 !important; /* Keeps the same success color */
+  color: white !important; /* Ensures text color stays white */
+  opacity: 0.7; /* Adjust opacity if needed */
+  text-transform: none !important; /* Prevents text from changing to uppercase */
+}
+
+
+.process-btn:hover {
+  background: #0f5b34;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .image-container {
+      padding: 20px;
+      max-width: 90%;
+  }
+  
+  .upload-box {
+      padding: 20px;
+  }
+}
+
+/* Wrapper to hold image and overlay */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* The overlay appears when processing starts */
+.processing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Animated bar effect */
+.processing-bar {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #00ff00; /* Green processing bar */
+  animation: scanEffect 1.5s infinite alternate ease-in-out;
+}
+
+/* Scanning animation */
+@keyframes scanEffect {
+  from {
+      top: 10%;
+  }
+  to {
+      top: 90%;
   }
 }
