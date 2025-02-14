@@ -16,6 +16,7 @@ import OurMission from "./Components/OurMission/OurMission";
 import OurTeam from "./Components/OurTeam/OurTeam";
 import PlantGallery from "./Components/PlantGallery/plant"
 import CheckMedicine from "./Components/CheckMedicine/check"
+import Doctor from "./Components/Doctor/doctor"
 
 const AppRoutes = ({setIsAuthenticated}) => {
   const [loading, setLoading] = useState(false);
@@ -60,6 +61,7 @@ const AppRoutes = ({setIsAuthenticated}) => {
             <Route path="/mission" element={<OurMission />} />
             {/* <Route path="/plant/gallery" element={<PlantGallery />} /> */}
             <Route path="/check-medicine" element={<CheckMedicine />} />
+            <Route path="/ai/doctor" element={<Doctor />} />
           </Routes>
         </>
       )}

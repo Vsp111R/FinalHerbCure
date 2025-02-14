@@ -67,6 +67,7 @@ const Navbar = () => {
               <div className="dropdown-menu">
                 <Link to="/herbal-garden">Virtual Herbal Garden</Link>
                 <Link to="/plant/gallery">Research & Testing</Link>
+                <Link to="/ai/doctor">AI Doctor</Link>
               </div>
             )}
           </div>
