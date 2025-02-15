@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Ocecough Ayurvedic Cough Syrup",
+    "disease": "cough",
+    "description": "A non-drowsy, alcohol-free cough syrup made with 11 Ayurvedic herbs, designed to relieve cough without the use of chemicals or preservatives."
+  },
+  {
+    "name": "AMBANI HEALTH CARE Ayurvedic Cough Syrup",
+    "disease": "cough",
+    "description": "A 100% natural, paraben-free cough syrup formulated with herbs like Pudina, Vasaka, and Tulsi, providing relief from all types of cough, sore throat, and cold."
+  },
+  {
+    "name": "Emcof Herbal Cough Syrup",
+    "disease": "Cough",
+    "description": "An Ayurvedic herbal cough syrup free from artificial additives and preservatives, effective against dry cough, wet cough, smokers cough, allergic cough, and sore throat."
+  },
+  {
+    "name": "VedRelief® Cough Syrup",
+    "disease": "Cough",
+    "description": "A natural Ayurvedic, non-alcoholic formulation for cough and cold, made with powerful herbal extracts, free from antihistamines and codeine."
+  },
+  {
+    "name": "Hamdard Joshina Herbal Cough & Cold Syrup",
+    "disease": "Cough and Cold",
+    "description": "A natural remedy made from 12 essential herbs, providing relief from chest congestion, stuffy nose, and cough without any side effects."
+  },
+  {
+    "name": "Patanjali Isabgol Husk",
+    "disease": "constipation",
+    "description": "A natural source of fiber that helps in regulating digestion, softening stool, and relieving constipation effectively."
+  },
+  {
+    "name": "Himalaya Triphala Tablets",
+    "disease": "constipation",
+    "description": "A herbal formula containing Amla, Haritaki, and Bibhitaki, known for its digestive and detoxifying properties that help relieve constipation naturally."
+  },
+  {
+    "name": "Baidhyanath Kabz Har Granules",
+    "disease": "constipation",
+    "description": "An Ayurvedic solution with the goodness of Senna, Ajwain, and Mulethi, helping in relieving hard stool and bloating."
+  },
+  {
+    "name": "Dabur Honitus Cough Syrup",
+    "disease": "cough",
+    "description": "A natural cough syrup with honey, Tulsi, and Mulethi that soothes the throat and relieves cough."
+  },
+  {
+    "name": "Himalaya Septilin Tablets",
+    "disease": "immunity and fever",
+    "description": "An immunity-boosting Ayurvedic supplement that helps in fighting infections and reducing fever."
+  },
+  {
+    "name": "Zandu Balm",
+    "disease": "headache and cold",
+    "description": "A quick-relief Ayurvedic balm that helps reduce headaches, nasal congestion, and muscle pain."
+  },
+  {
+    "name": "Patanjali Giloy Ghanvati",
+    "disease": "fever and immunity",
+    "description": "A natural immunity booster that helps in fever management and improves overall health."
+  },
+  {
+    "name": "Himalaya Gasex Tablets",
+    "disease": "indigestion and bloating",
+    "description": "A digestive supplement that helps relieve gas, acidity, and bloating naturally."
+  },
+  {
+    "name": "Dhootapapeshwar Sitopaladi Churna",
+    "disease": "cold and cough",
+    "description": "A time-tested Ayurvedic remedy that provides relief from cough, cold, and respiratory issues."
+  },
+  {
+    "name": "Baidyanath Chyawanprash",
+    "disease": "immunity",
+    "description": "A traditional Ayurvedic formula with Amla and 40+ herbs that strengthens immunity and boosts energy."
+  },
+  {
+    "name": "Dabur Stresscom Capsules",
+    "disease": "stress and anxiety",
+    "description": "An Ashwagandha-based supplement that helps manage stress, anxiety, and promotes relaxation."
+  },
+  {
+    "name": "Himalaya Mentat Tablets",
+    "disease": "mental wellness",
+    "description": "A herbal supplement that supports cognitive function, reduces stress, and improves concentration."
+  },
+  {
+    "name": "Zandu Kesari Jivan",
+    "disease": "weakness and fatigue",
+    "description": "An Ayurvedic rejuvenator with saffron and Amla that boosts stamina, energy, and immunity."
+  },
+  {
+    "name": "Maharishi Ayurveda Raktda",
+    "disease": "iron deficiency",
+    "description": "An Ayurvedic iron supplement that helps improve hemoglobin levels and fights anemia naturally."
+  },
+  {
+    "name": "Himalaya Rumalaya Tablets",
+    "disease": "knee pain and joint health",
+    "description": "A natural supplement that relieves joint pain, inflammation, and improves mobility."
+  },
+  {
+    "name": "Dabur Mahanarayan Tail",
+    "disease": "joint and muscle pain",
+    "description": "A traditional Ayurvedic oil that provides relief from knee pain, arthritis, and muscle stiffness."
+  },
+  {
+    "name": "Patanjali Divya Medha Vati",
+    "disease": "stress and memory",
+    "description": "A natural brain tonic that reduces stress, enhances focus, and improves memory power."
+  }
+]
