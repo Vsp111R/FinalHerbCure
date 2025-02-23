@@ -306,6 +306,238 @@
 # if __name__ == "__main__":
 #     app.run(debug=True, port=5000)
 
+
+
+# from flask import Flask, request, jsonify, send_file
+# from flask_cors import CORS
+# import json
+# import os
+# import datetime
+# import textwrap
+# import base64
+# from io import BytesIO
+# from paddleocr import PaddleOCR
+# from fpdf import FPDF
+# from PIL import Image
+
+# app = Flask(__name__)
+# CORS(app)
+
+# CORS(app, origins=["http://localhost:5173"])
+
+# # Load ingredient uses from JSON
+# with open("data.json", "r", encoding="utf-8") as file:
+#     ingredient_data = json.load(file)  # Changed variable name to be more descriptive
+
+# # Load alternate medicines from compare.json
+# with open("compare.json", "r", encoding="utf-8") as file:
+#     alternate_medicines = json.load(file)
+
+# # Initialize PaddleOCR
+# ocr = PaddleOCR(use_angle_cls=True, lang="en", use_gpu=False)
+
+# @app.route("/extract", methods=["POST"])
+# def extract_text():
+#     image_path = "uploaded_image.jpg"
+
+#     # ✅ Check if an image file was uploaded
+#     if "image" in request.files:
+#         image = request.files["image"]
+#         image.save(image_path)
+    
+#     # ✅ Check if a Base64 image (captured from the camera) is sent
+#     elif "captured_image" in request.json:
+#         try:
+#             captured_image_data = request.json["captured_image"]
+#             image_data = base64.b64decode(captured_image_data.split(",")[1])  # Extract Base64 data
+#             image = Image.open(BytesIO(image_data))
+#             image.save(image_path, "JPEG")  # Save as JPG file
+#         except Exception as e:
+#             return jsonify({"error": "Invalid image data"}), 400
+#     else:
+#         return jsonify({"error": "No image provided"}), 400
+
+#     # Run OCR
+#     result = ocr.ocr(image_path, cls=True)
+#     full_text = [word[1][0].strip().lower() for line in result for word in line]
+#     full_text_str = " ".join(full_text)
+
+#     # Stop words filtering
+#     stop_words = {"dose", "indications", "directions", "usage", "how to use"}
+#     for stop_word in stop_words:
+#         if stop_word in full_text_str:
+#             full_text_str = full_text_str.split(stop_word)[0].strip()
+#             break
+
+#     # Extract ingredients
+#     common_ingredient_names = set(ingredient_data.keys())
+#     found_ingredients = {
+#         name for name in common_ingredient_names if name in full_text_str
+#     }
+
+#     # Check for preservatives
+#     preservative_keywords = ["preservative", "excipients", "additive", "stabilizer"]
+#     contains_preservatives = any(
+#         keyword in full_text_str for keyword in preservative_keywords
+#     )
+
+#     # Extract disease name from request
+#     disease_name = request.form.get("disease", "").lower()
+
+#     # Find alternate medicine
+#     alternate_options = [
+#         med for med in alternate_medicines if med["disease"].lower() == disease_name
+#     ]
+
+#     # Get current date and time
+#     now = datetime.datetime.now()
+#     date_time = now.strftime("%A, %d %B %Y | %I:%M %p")
+
+#     # Generate PDF report
+#     pdf = FPDF()
+#     pdf.set_auto_page_break(auto=True, margin=15)
+#     pdf.add_page()
+
+#     # --- HELPER FUNCTION TO SET FONT ---
+#     def set_font(pdf, size, bold=False):
+#         pdf.set_font("Arial", "B" if bold else "", size)
+    
+#     # --- HELPER FUNCTION TO PRINT MULTI-CELL TEXT ---
+#     def print_multicell(pdf, text, width=190, height=8, align="L"):
+#         pdf.multi_cell(width, height, text, align=align)
+
+#     # --- REPORT TITLE ---
+#     set_font(pdf, 16, bold=True)
+#     pdf.cell(200, 10, "HerbCure - Extracted Ingredients Report", ln=True, align="C")
+
+#     set_font(pdf, 12)
+#     pdf.cell(200, 8, f"{date_time}", ln=True, align="C")
+#     pdf.ln(10)
+
+#     # --- EXTRACTED TEXT ---
+#     set_font(pdf, 12)
+#     wrapped_text = textwrap.fill(f"Extracted Text:\n{full_text_str}", width=180)  # Increased width
+#     print_multicell(pdf, wrapped_text, width=180)
+#     pdf.ln(10)
+
+#     # --- DETECTED INGREDIENTS ADVANTAGES ---
+#     set_font(pdf, 14, bold=True)
+#     pdf.cell(200, 10, "Detected Ingredients Advantages", ln=True)
+#     pdf.ln(2)  # Reduced space after title
+
+#     for ingredient in found_ingredients:
+#         ingredient_info = ingredient_data[ingredient]
+#         advantages = ingredient_info.get("advantages", "No information available.")
+
+#         set_font(pdf, 12, bold=True)  # Increase font size
+#         pdf.cell(0, 8, f"- {ingredient.capitalize()}:", ln=True)  # Increase cell height
+
+#         set_font(pdf, 11)
+#         print_multicell(pdf, f"    {advantages}", width=180, height=6)
+#         pdf.ln(2)
+
+#     pdf.ln(5)  # Reduced space after the ingredients section
+
+#     # --- DETECTED INGREDIENTS DISADVANTAGES ---
+#     set_font(pdf, 14, bold=True)
+#     pdf.cell(200, 10, "Detected Ingredients Disadvantages", ln=True)
+#     pdf.ln(2)  # Reduced space after title
+
+#     for ingredient in found_ingredients:
+#         ingredient_info = ingredient_data[ingredient]
+#         disadvantages = ingredient_info.get("disadvantages", "No information available.")
+
+#         set_font(pdf, 12, bold=True)  # Increase font size
+#         pdf.cell(0, 8, f"- {ingredient.capitalize()}:", ln=True)  # Increase cell height
+
+#         set_font(pdf, 11)
+#         print_multicell(pdf, f"    {disadvantages}", width=170, height=6)  # Reduce width
+#         pdf.ln(2)
+
+#     pdf.ln(5)  # Reduced space after the ingredients section
+
+#     # --- PRESERVATIVES WARNING ---
+#     if contains_preservatives:
+#         pdf.set_text_color(255, 0, 0)  # Red color
+#         set_font(pdf, 12, bold=True)
+#         pdf.cell(0, 10, "Warning: This product contains preservatives!", ln=True)
+#         pdf.set_text_color(0, 0, 0) # Reset to black
+#         set_font(pdf, 11)
+#         print_multicell(pdf,
+#                           "Note: Some ingredients detected in this product contain preservatives as per the guidelines of the Ministry of AYUSH. Please refer to official sources for more details.")
+#     else:
+#         pdf.set_text_color(0, 128, 0)  # Green color
+#         set_font(pdf, 12, bold=True)
+#         pdf.cell(0, 10, "As per the provided image of medicine, no preservatives detected.", ln=True)
+#         pdf.set_text_color(0, 0, 0)
+#         set_font(pdf, 11)
+#         print_multicell(pdf, "Note: Consume after prescription from a doctor.")
+
+#     pdf.set_text_color(0, 0, 0)  # Reset text color to black
+#     pdf.ln(10)
+
+#     # --- ALTERNATIVE MEDICINE OPTIONS ---
+#     set_font(pdf, 14, bold=True)
+#     # Only show alternative medicine options if disease_name is not "none"
+#     if disease_name.lower() != "none":
+#         # Check if there's enough space on the current page
+#         remaining_space = pdf.h - pdf.get_y() - pdf.b_margin
+#         required_space = 50  # Estimated space needed for alternative medicine details
+#         if remaining_space < required_space:
+#             pdf.add_page() # Add a new page if not enough space
+
+#         pdf.cell(200, 10, "Alternative Medicine Options:", ln=True)
+#         set_font(pdf, 12)
+
+#         # Display details for the disease entered by the user
+#         disease_data = next((item for item in alternate_medicines if item["disease"].lower() == disease_name), None)
+
+#         if disease_data:
+#             # Check for space again before printing details, add page if needed
+#             remaining_space = pdf.h - pdf.get_y() - pdf.b_margin
+#             if remaining_space < required_space:
+#                 pdf.add_page()
+
+#             set_font(pdf, 14, bold=True)
+#             pdf.cell(0, 10, f"Details for: {disease_data['disease'].capitalize()}", ln=True)  # Printing as title
+#             set_font(pdf, 12)
+
+#             #Printing Name and Description only once
+#             set_font(pdf, 12, bold = True)
+#             pdf.cell(0, 10, f"Name: {disease_data['name']}", ln = True)
+#             set_font(pdf, 12)
+#             print_multicell(pdf, f"Description: {disease_data['description']}", width=180)  # Description has the cut line.
+#             pdf.ln(5)
+
+#         else:
+#             set_font(pdf, 12)
+#             pdf.cell(200, 10, "No specific details found for this disease.", ln=True)
+#             pdf.ln(5)
+
+#         # Removing Alternative Options
+#         # for option in alternate_options:
+#         #     description = textwrap.fill(option['description'], width=80)  # Wrap each description
+#         #     print_multicell(pdf, f"- {option['name']}: {description}", width=180) # Increased width
+#         #     pdf.ln(3)
+#     else:
+#         # If disease_name is "none", skip the alternative medicine section
+#         pdf.cell(200, 10, "No Alternative Medicine Options Shown (Disease set to None).", ln=True)
+
+#     # --- FOOTER ---
+#     set_font(pdf, 12, bold=False)
+#     pdf.cell(200, 10, "Report Generated by HerbCure", ln=True, align="C")
+
+#     # Save PDF to Downloads folder
+#     downloads_path = os.path.join(os.path.expanduser("~"), "Downloads")
+#     pdf_filename = os.path.join(downloads_path, "Extracted_Ingredients_Report.pdf")
+#     pdf.output(pdf_filename, "F")
+
+#     return send_file(pdf_filename, as_attachment=True)
+
+# if __name__ == "__main__":
+#     app.run(debug=True, port=5000)
+
+
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import json
@@ -325,7 +557,7 @@ CORS(app, origins=["http://localhost:5173"])
 
 # Load ingredient uses from JSON
 with open("data.json", "r", encoding="utf-8") as file:
-    ingredient_uses = json.load(file)
+    ingredient_data = json.load(file)  # Changed variable name to be more descriptive
 
 # Load alternate medicines from compare.json
 with open("compare.json", "r", encoding="utf-8") as file:
@@ -333,6 +565,24 @@ with open("compare.json", "r", encoding="utf-8") as file:
 
 # Initialize PaddleOCR
 ocr = PaddleOCR(use_angle_cls=True, lang="en", use_gpu=False)
+
+# --- COLOR PALETTE (Earthy Tones) ---
+COLOR_PRIMARY = (46, 139, 87)  # SeaGreen - Primary color for headers/titles
+COLOR_SECONDARY = (
+    107,
+    142,
+    35,
+)  # OliveDrab - Secondary color for accents/details
+COLOR_TEXT = (0, 0, 0)  # Black - Default text color
+COLOR_WARNING = (220, 20, 60)  # Crimson - Warning/Error color
+COLOR_SUCCESS = (0, 128, 0)  # Green - Success Color
+COLOR_GREY = (169, 169, 169)  # DarkGrey - Grey color for horizontal lines
+
+# --- FONT STYLES ---
+FONT_TITLE = "Arial"
+FONT_HEADING = "Arial"
+FONT_BODY = "Arial"
+
 
 @app.route("/extract", methods=["POST"])
 def extract_text():
@@ -342,12 +592,14 @@ def extract_text():
     if "image" in request.files:
         image = request.files["image"]
         image.save(image_path)
-    
+
     # ✅ Check if a Base64 image (captured from the camera) is sent
     elif "captured_image" in request.json:
         try:
             captured_image_data = request.json["captured_image"]
-            image_data = base64.b64decode(captured_image_data.split(",")[1])  # Extract Base64 data
+            image_data = base64.b64decode(
+                captured_image_data.split(",")[1]
+            )  # Extract Base64 data
             image = Image.open(BytesIO(image_data))
             image.save(image_path, "JPEG")  # Save as JPG file
         except Exception as e:
@@ -368,7 +620,7 @@ def extract_text():
             break
 
     # Extract ingredients
-    common_ingredient_names = set(ingredient_uses.keys())
+    common_ingredient_names = set(ingredient_data.keys())
     found_ingredients = {
         name for name in common_ingredient_names if name in full_text_str
     }
@@ -398,15 +650,24 @@ def extract_text():
 
     # --- HELPER FUNCTION TO SET FONT ---
     def set_font(pdf, size, bold=False):
-        pdf.set_font("Arial", "B" if bold else "", size)
-    
+        pdf.set_font(FONT_BODY, "B" if bold else "", size)
+
     # --- HELPER FUNCTION TO PRINT MULTI-CELL TEXT ---
     def print_multicell(pdf, text, width=190, height=8, align="L"):
         pdf.multi_cell(width, height, text, align=align)
 
-    # --- REPORT TITLE ---
+    # --- REPORT HEADER ---
+    # (Potentially add a logo here)
+    pdf.set_fill_color(*COLOR_PRIMARY)  # Use primary color for header background
+    pdf.rect(
+        0, 0, 210, 20, "F"
+    )  # Creates a filled rectangle for the header (adjust size as needed)
+    pdf.set_text_color(255, 255, 255)  # White text for header
     set_font(pdf, 16, bold=True)
-    pdf.cell(200, 10, "HerbCure - Extracted Ingredients Report", ln=True, align="C")
+    pdf.cell(
+        200, 10, "HerbCure - Extracted Ingredients Report", ln=True, align="C"
+    )  # Increased cell height
+    pdf.set_text_color(*COLOR_TEXT)  # Reset text color to default
 
     set_font(pdf, 12)
     pdf.cell(200, 8, f"{date_time}", ln=True, align="C")
@@ -414,70 +675,175 @@ def extract_text():
 
     # --- EXTRACTED TEXT ---
     set_font(pdf, 12)
-    wrapped_text = textwrap.fill(f"Extracted Text:\n{full_text_str}", width=180)  # Increased width
+    wrapped_text = textwrap.fill(
+        f"Extracted Text:\n{full_text_str}", width=180
+    )  # Increased width
     print_multicell(pdf, wrapped_text, width=180)
     pdf.ln(10)
 
-    # --- DETECTED INGREDIENTS ---
+    # --- HORIZONTAL LINE ---
+    pdf.set_draw_color(*COLOR_GREY)  # Set line color to grey
+    pdf.line(10, pdf.get_y(), 200, pdf.get_y())  # Draw the line
+    pdf.ln(5)
+
+    # --- DETECTED INGREDIENTS ADVANTAGES ---
     set_font(pdf, 14, bold=True)
-    pdf.cell(200, 10, "Detected Ingredients & Their Uses:", ln=True)
-    set_font(pdf, 12)
+    pdf.set_text_color(*COLOR_PRIMARY)  # Heading color
+    pdf.cell(200, 10, "Detected Ingredients Advantages", ln=True)
+    pdf.set_text_color(*COLOR_TEXT)  # Reset text color
+    pdf.ln(2)  # Reduced space after title
 
     for ingredient in found_ingredients:
-        ingredient_text = f"- {ingredient.capitalize()}: {ingredient_uses[ingredient]}"
-        print_multicell(pdf, ingredient_text)
-        pdf.ln(3)  # Add space after each ingredient
+        ingredient_info = ingredient_data[ingredient]
+        advantages = ingredient_info.get("advantages", "No information available.")
+        set_font(pdf, 12, bold=True)  # Increase font size
+        pdf.cell(0, 8, f"- {ingredient.capitalize()}:", ln=True)  # Increase cell height
 
-    pdf.ln(10)
+        set_font(pdf, 11)
+        print_multicell(pdf, f"    {advantages}", width=180, height=6)
+        pdf.ln(2)
+
+    pdf.ln(5)  # Reduced space after the ingredients section
+
+    # --- HORIZONTAL LINE ---
+    pdf.set_draw_color(*COLOR_GREY)  # Set line color to grey
+    pdf.line(10, pdf.get_y(), 200, pdf.get_y())  # Draw the line
+    pdf.ln(5)
+
+    # --- DETECTED INGREDIENTS DISADVANTAGES ---
+    set_font(pdf, 14, bold=True)
+    pdf.set_text_color(*COLOR_PRIMARY)  # Heading color
+    pdf.cell(200, 10, "Detected Ingredients Disadvantages", ln=True)
+    pdf.set_text_color(*COLOR_TEXT)  # Reset text color
+    pdf.ln(2)  # Reduced space after title
+
+    for ingredient in found_ingredients:
+        ingredient_info = ingredient_data[ingredient]
+        disadvantages = ingredient_info.get(
+            "disadvantages", "No information available."
+        )
+
+        set_font(pdf, 12, bold=True)  # Increase font size
+        pdf.cell(0, 8, f"- {ingredient.capitalize()}:", ln=True)  # Increase cell height
+
+        set_font(pdf, 11)
+        print_multicell(pdf, f"    {disadvantages}", width=170, height=6)  # Reduce width
+        pdf.ln(2)
+
+    pdf.ln(5)  # Reduced space after the ingredients section
+
+    # --- HORIZONTAL LINE ---
+    pdf.set_draw_color(*COLOR_GREY)  # Set line color to grey
+    pdf.line(10, pdf.get_y(), 200, pdf.get_y())  # Draw the line
+    pdf.ln(5)
 
     # --- PRESERVATIVES WARNING ---
     if contains_preservatives:
-        pdf.set_text_color(255, 0, 0)  # Red color
+        pdf.set_text_color(*COLOR_WARNING)  # Red color
         set_font(pdf, 12, bold=True)
         pdf.cell(0, 10, "Warning: This product contains preservatives!", ln=True)
-        pdf.set_text_color(0, 0, 0) # Reset to black
+        pdf.set_text_color(*COLOR_TEXT)  # Reset to black
         set_font(pdf, 11)
-        print_multicell(pdf,
-                          "Note: Some ingredients detected in this product contain preservatives as per the guidelines of the Ministry of AYUSH. Please refer to official sources for more details.")
+        print_multicell(
+            pdf,
+            "Note: Some ingredients detected in this product contain preservatives as per the guidelines of the Ministry of AYUSH. Please refer to official sources for more details.",
+        )
     else:
-        pdf.set_text_color(0, 128, 0)  # Green color
+        pdf.set_text_color(*COLOR_SUCCESS)  # Green color
         set_font(pdf, 12, bold=True)
-        pdf.cell(0, 10, "As per the provided image of medicine, no preservatives detected.", ln=True)
-        pdf.set_text_color(0, 0, 0)
+        pdf.cell(
+            0,
+            10,
+            "As per the provided image of medicine, no preservatives detected.",
+            ln=True,
+        )
+        pdf.set_text_color(*COLOR_WARNING)  # Red color
         set_font(pdf, 11)
         print_multicell(pdf, "Note: Consume after prescription from a doctor.")
 
-    pdf.set_text_color(0, 0, 0)  # Reset text color to black
+    pdf.set_text_color(*COLOR_TEXT)  # Reset text color to black
     pdf.ln(10)
+
+    # --- HORIZONTAL LINE ---
+    pdf.set_draw_color(*COLOR_GREY)  # Set line color to grey
+    pdf.line(10, pdf.get_y(), 200, pdf.get_y())  # Draw the line
+    pdf.ln(5)
 
     # --- ALTERNATIVE MEDICINE OPTIONS ---
     set_font(pdf, 14, bold=True)
-    pdf.cell(200, 10, "Alternative Medicine Options:", ln=True)
-    set_font(pdf, 12)
+    pdf.set_text_color(*COLOR_PRIMARY)  # Heading color
+    # Only show alternative medicine options if disease_name is not "none"
+    if disease_name.lower() != "none":
+        # Find all matching alternative medicines
+        alternate_options = [
+            med for med in alternate_medicines if med["disease"].lower() == disease_name
+        ]
 
-    # Display details for the disease entered by the user
-    disease_data = next((item for item in alternate_medicines if item["disease"].lower() == disease_name), None)
+        # Check if there's enough space on the current page
+        remaining_space = pdf.h - pdf.get_y() - pdf.b_margin
+        required_space = 50  # Estimated space needed for alternative medicine details
 
-    if disease_data:
-        set_font(pdf, 14, bold=True)
-        pdf.cell(200, 10, f"Details for: {disease_data['disease'].capitalize()}", ln=True)
+        if remaining_space < required_space:
+            pdf.add_page()  # Add a new page if not enough space
+
+        pdf.cell(200, 10, "Alternative Medicine Options:", ln=True)
+        pdf.set_text_color(*COLOR_TEXT)  # Reset text color
         set_font(pdf, 12)
-        print_multicell(pdf, f"Name: {disease_data['name']}")
-        print_multicell(pdf, f"Description: {disease_data['description']}", width=180)  # Description has the cut line.
-        pdf.ln(5)
+
+        # Printing All Alternative Medicines available in compare.json
+        for (
+            disease_data
+        ) in (
+            alternate_options
+        ):  # Looping to print all the available medicine names with their details
+            # Check for space again before printing details, add page if needed
+            remaining_space = pdf.h - pdf.get_y() - pdf.b_margin
+            if remaining_space < required_space:
+                pdf.add_page()
+
+            set_font(pdf, 14, bold=True)
+            pdf.cell(
+                0,
+                10,
+                f"Details for: {disease_data['disease'].capitalize()}",
+                ln=True,
+            )  # Printing as title
+
+            set_font(pdf, 12, bold=True)  # making name bold
+            pdf.cell(0, 10, f"Name: {disease_data['name']}", ln=True)
+            set_font(pdf, 12)  # setting the font back to default for description
+            print_multicell(
+                pdf,
+                f"Description: {disease_data['description']}",
+                width=180,
+                height=6,
+            )  # Description has the cut line.
+            pdf.ln(5)
+
     else:
-        set_font(pdf, 12)
-        pdf.cell(200, 10, "No specific details found for this disease.", ln=True)
-        pdf.ln(5)
+        # If disease_name is "none", skip the alternative medicine section
+        pdf.cell(
+            200,
+            10,
+            "No Alternative Medicine Options Shown (Disease set to None).",
+            ln=True,
+        )  # --- FOOTER ---
 
-    for option in alternate_options:
-        description = textwrap.fill(option['description'], width=80)  # Wrap each description
-        print_multicell(pdf, f"- {option['name']}: {description}", width=180) # Increased width
-        pdf.ln(3)
+    # --- HORIZONTAL LINE ---
+    pdf.set_draw_color(*COLOR_GREY)  # Set line color to grey
+    pdf.line(10, pdf.get_y(), 200, pdf.get_y())  # Draw the line
+    pdf.ln(5)
 
-    # --- FOOTER ---
+    # --- REPORT FOOTER ---
+    pdf.set_y(-15)  # Position at 15mm from bottom
+    pdf.set_fill_color(*COLOR_PRIMARY)  # Use primary color for footer background
+    pdf.rect(
+        0, pdf.get_y() - 5, 210, 20, "F"
+    )  # Creates a filled rectangle for the footer (adjust size as needed)
+    pdf.set_text_color(255, 255, 255)  # White text for footer
     set_font(pdf, 12, bold=False)
     pdf.cell(200, 10, "Report Generated by HerbCure", ln=True, align="C")
+    pdf.set_text_color(*COLOR_TEXT)  # Reset text color to default
 
     # Save PDF to Downloads folder
     downloads_path = os.path.join(os.path.expanduser("~"), "Downloads")
@@ -485,6 +851,7 @@ def extract_text():
     pdf.output(pdf_filename, "F")
 
     return send_file(pdf_filename, as_attachment=True)
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)

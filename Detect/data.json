@@ -1,264 +1,1062 @@
 {
-  "makoy": "Improves liver function and soothes ulcers. May cause nausea or diarrhea in high doses.",
-  "giloy": "Boosts immunity and treats chronic fever. Excessive use may lead to constipation or low blood sugar.",
-  "kutki": "Protects the liver and helps with digestive issues. Overuse can cause dehydration and low blood pressure.",
-  "karkatashriringi": "Used for respiratory disorders and asthma. High doses may lead to digestive discomfort.",
-  "maricha": "Enhances digestion and metabolism. Excessive consumption may cause acidity or throat irritation.",
-  "bhumi amla": "Treats liver disorders and aids digestion. Prolonged use may lower blood sugar excessively.",
-  "ajagandha": "Supports digestion and respiratory health. May cause allergic reactions in some individuals.",
-  "ajamoda": "Relieves bloating and digestive issues. Can cause acidity and discomfort if taken in excess.",
-  "amalaki": "Powerful antioxidant, improves immunity. Overconsumption may lead to acidity or diarrhea.",
-  "aragvadha": "Natural laxative, useful for skin disorders. Excess intake can cause stomach cramps or diarrhea.",
-  "arka": "Detoxifies and supports respiratory health. Can cause nausea and dizziness in some cases.",
-  "asana": "Helps in diabetes and wound healing. Prolonged use may affect liver function.",
-  "ashoka": "Supports female reproductive health. May cause hormonal imbalances if used excessively.",
-  "atasi": "Rich in omega-3, supports heart health. Overuse can lead to digestive issues or bloating.",
-  "atibala": "Boosts immunity and reduces inflammation. Excess consumption may cause stomach discomfort.",
-  "ativisha": "Useful for fever and digestive disorders. High doses can be toxic and lead to vomiting.",
-  "bakuchi": "Improves skin conditions and pigmentation. Can cause skin irritation or allergic reactions.",
-  "bibhitaki": "Aids digestion and detoxification. Overuse may lead to dehydration or diarrhea.",
-  "chandrasura": "Enhances metabolism and immunity. Excess intake can cause acidity or digestive distress.",
-  "chitraka": "Boosts digestion and reduces bloating. May cause ulcers or gastric irritation if overused.",
-  "gambhari": "Improves vitality and supports the nervous system. Overconsumption may cause digestive issues.",
-  "gokshura": "Enhances kidney and urinary health. Can lead to dehydration if taken excessively.",
-  "guduchi": "Boosts immunity and detoxifies the body. May lower blood sugar too much in diabetics.",
-  "guggulu": "Reduces cholesterol and joint pain. Excess intake may cause skin rashes or digestive upset.",
-  "gunja": "Used in external applications for skin issues. Highly toxic if ingested in large amounts.",
-  "haridra": "Anti-inflammatory and supports liver health. Can cause stomach upset if consumed in excess.",
-  "haritaki": "Aids digestion and detoxification. Overuse may lead to dehydration and electrolyte imbalance.",
-  "hingu": "Relieves gas and improves digestion. Excessive consumption can cause nausea or headaches.",
-  "jatamansi": "Supports mental calmness and sleep. May cause drowsiness or dizziness in high doses.",
-  "jatiphala": "Improves digestion and relieves stress. Overuse can lead to hallucinations or nausea.",
-  "kampillaka": "Helps in deworming and liver health. Can cause abdominal cramps if taken in excess.",
-  "kanchanara": "Supports thyroid and lymphatic health. May interfere with thyroid function in high doses.",
-  "kankola": "Used in digestive and respiratory support. Overuse may lead to digestive irritation.",
-  "kantakari": "Supports respiratory and immune health. Can cause throat irritation in some cases.",
-  "kapikachhu": "Enhances brain function and libido. Overconsumption may cause dizziness or nausea.",
-  "karavira": "Used externally for wound healing. Highly toxic if ingested in large amounts.",
-  "karanja": "Beneficial for skin diseases and liver health. Can cause skin irritation or allergic reactions.",
-  "karpasa": "Supports skin and hair health. Overuse may lead to dryness or scalp irritation.",
-  "katuki": "Liver detoxifier and promotes digestion. Excess intake may cause dehydration and fatigue.",
-  "ketaki": "Used in perfumes and traditional medicines. Can cause skin irritation if applied excessively.",
-  "neem": "Blood purifier, anti-inflammatory, supports skin and dental health. Overuse can lead to liver damage and lowered fertility.",
-  "mulethi": "Supports respiratory health and soothes stomach ulcers. Excessive consumption can raise blood pressure.",
-  "babool": "Supports oral health and wound healing. May cause constipation if taken in large quantities.",
-  "chirchita": "Bitter tonic, fever reducer, liver health. Overuse may cause nausea or dizziness.",
-  "ashwagandha": "Adaptogen, stress relief, energy, immunity. Excess use can lead to digestive issues or drowsiness.",
-  "bael": "Aids digestion, relieves constipation, supports ulcerative colitis. Overuse may cause bloating or gastric discomfort.",
-  "aloe vera": "Reduces dental plaque, accelerates wound healing, prevents wrinkles. Can cause diarrhea or skin irritation in excess.",
-  "kulanjan": "Helps in rheumatoid arthritis, boosts immunity, aids respiratory health. Excessive use may lead to acidity or irritation.",
-  "kalmegh": "Reduces inflammation, supports liver health, fights infections. Can cause nausea or low blood pressure in high doses.",
-  "shatavari": "Supports female reproductive health, boosts lactation, aids digestion. Overuse may cause hormonal imbalance or bloating.",
-  "shirish": "Helps in allergies and inflammatory conditions. Excess use may lead to dryness or mild toxicity.",
-  "adusa": "Treats bronchitis, asthma, cough, and breathing issues. Overuse may cause nausea or digestive discomfort.",
-  "ratti": "Aids skin conditions, inflammation, and wound healing. Highly toxic if ingested in large quantities.",
-  "pippali": "Supports respiratory health, relieves chronic coughs, aids asthma. Can cause acidity or throat irritation in excess.",
-  "kanghi": "Helps in digestive disorders, joint pain, gout, and arthritis. Overuse may lead to stomach cramps or discomfort.",
-  "tamalpatra": "Aids gastric ulcers, supports respiratory and oral health. Excess intake can cause acidity or allergic reactions.",
-  "ananas": "Aids digestion, reduces inflammation, helps wound healing. Excessive intake may lead to acidity or allergies.",
-  "bharangi": "Helps in allergic rhinitis, sinusitis, and respiratory disorders. Overuse may cause nausea or dizziness.",
-  "chitvan": "Supports digestion, metabolism, and relieves abdominal pain. High doses may cause gastric irritation.",
-  "ankola": "Aids wounds, skin diseases, diabetes, and diarrhea. Excessive use may lead to toxicity or digestive discomfort.",
-  "senna": "Acts as a natural laxative and aids digestive cleansing. Overuse may cause dehydration or dependency.",
-  "yashtimadhu": "Soothes the throat and aids digestion. Excess use can raise blood pressure or cause bloating.",
-  "javantri": "Stimulates appetite and aids digestion. Overconsumption may lead to hallucinations or dizziness.",
-  "elchi": "Freshens breath and supports digestion. Excess intake can cause acidity or throat irritation.",
-  "laving": "Relieves toothache and has antimicrobial properties. Overuse may cause mouth irritation or nausea.",
-  "shitalchini": "Acts as an anti-inflammatory and digestive aid. High doses may cause stomach irritation.",
-  "jaifal": "Supports sleep and pain relief. Excess use can cause hallucinations or dizziness.",
-  "phudina": "Provides a cooling effect and relieves nausea. Overuse may cause acid reflux or throat irritation.",
-  "kapur": "Relieves chest congestion and pain. Inhalation in high doses can cause toxicity.",
-  "bhringraj": "Promotes hair growth and supports liver health. Excess use may cause skin irritation or dryness.",
-  "punarnava": "Supports kidney and liver function. Overuse may lead to dehydration or electrolyte imbalance.",
-  "arjun": "Strengthens heart health. Excess consumption may lower blood pressure too much.",
-  "daru haldi": "Has anti-inflammatory and antibacterial properties. High doses can cause digestive issues or allergic reactions.",
-  "shunthi": "Aids digestion, relieves nausea, reduces inflammation. Overuse can lead to acidity or heartburn.",
-  "senna leaves": "Acts as a natural laxative, helps relieve constipation. Overuse may lead to dependency or dehydration.",
-  "sunth": "Aids digestion, reduces nausea, relieves bloating. Overconsumption may cause gastric irritation.",
-  "ajwain": "Supports digestion, relieves acidity, reduces bloating. High intake may lead to stomach discomfort or acidity.",
-  "himej": "Aids digestion, relieves constipation, detoxifies the body. Overuse may cause dehydration or electrolyte imbalance.",
-  "nisoth": "Acts as a natural laxative, detoxifies, supports liver health. Excess use may lead to dehydration or cramps.",
-  "badamtaila": "Protects skin and hair, provides deep nourishment. Excessive use may cause oil buildup or allergic reactions.",
-  "bibhitaka": "Supports immune function, aids detoxification, promotes digestion. Overuse may cause dehydration or diarrhea.",
-  "vidanga": "Supports detoxification, improves digestion, enhances skin clarity. High doses may lead to stomach discomfort.",
-  "musta": "Supports digestion, reduces inflammation, relieves pain. Overuse may cause acidity or constipation.",
-  "eranda": "Promotes joint health, aids detoxification, supports digestion. Excess use may lead to stomach cramps or diarrhea.",
-  "dhataki": "Supports menstrual health, rejuvenates skin, aids digestion. Overuse may cause hormonal imbalances.",
-  "camphor": "Relieves pain and inflammation, supports respiratory health. Inhalation in large amounts may cause dizziness or toxicity.",
-  "mishri": "Acts as a natural sweetener, aids digestion, soothes sore throats. Overuse can contribute to high blood sugar.",
-  "wheatgrass": "Boosts immunity, detoxifies, enhances energy. Overconsumption may lead to nausea or headaches.",
-  "laung": "Supports oral health, relieves pain, aids digestion. Excess use may cause mouth irritation or acidity.",
-  "nilghiri": "Promotes respiratory health, relieves congestion, antimicrobial. Overuse may cause allergic reactions or dizziness.",
-  "gum acacia": "Supports digestion, acts as a natural binder, aids wound healing. Excessive intake may cause bloating or constipation.",
-  "talcum": "Absorbs moisture, reduces friction, soothes skin. Inhalation of excess powder may cause respiratory issues.",
-  "swasari ras": "Helps loosen and break up mucus, making it easier to cough up. Excess intake may cause throat irritation.",
-  "sitopaladi churna": "Helps relieve dry and wet cough, fatigue, and rickets-related issues. Overuse can cause acidity or digestive discomfort.",
-  "moti pishti": "Enhances skin health, promotes cooling, and supports emotional well-being. Excessive use may cause fatigue due to cooling effects.",
-  "godanti bhasma": "Strengthens bones, supports vitality, and enhances immunity. High doses may cause digestive disturbances.",
-  "punarnavadi mandoor": "Supports kidney function, improves circulation, and aids detoxification. Prolonged use may disturb electrolyte balance.",
-  "guggul shuddh": "Supports joint health, reduces inflammation, and helps in weight management. May cause digestive issues or allergic reactions.",
-  "mukta shukti bhasma": "Enhances skin health, boosts immunity, and supports overall vitality. Overuse may lead to excessive cooling in the body.",
-  "mahat vidhvansan ras": "Reduces joint pain, alleviates inflammation, and promotes mobility. Excessive use may lead to digestive issues.",
-  "aamvatari ras": "Provides relief from joint pain, reduces inflammation, and supports overall joint health. Overuse may lead to acidity or gastric discomfort.",
-  "vrihat vatchintamani ras": "Supports vitality, improves digestion, and enhances mental clarity. High doses may cause nervous system imbalances.",
-  "nirgundi": "Relieves pain and inflammation, supports joint health, and promotes respiratory wellness. Excess usage may cause dryness in the body.",
-  "nagarmotha": "Aids digestion, relieves stress, and supports skin health. Overuse may lead to dehydration or weakness.",
-  "vaividang": "Supports digestion, enhances metabolism, and promotes detoxification. High intake may cause stomach irritation.",
-  "vacha": "Enhances cognitive function, supports mental clarity, and improves speech. Excessive use may cause irritation in the mouth or throat.",
-  "devdaru": "Relieves pain, reduces inflammation, and supports respiratory health. Overuse may cause nausea or dizziness.",
-  "chirayta": "Supports detoxification, boosts immunity, and aids digestion. Can be very bitter and may cause loss of appetite if overused.",
-  "baheda": "Supports digestion, improves skin texture, and enhances respiratory function. Excess intake may cause constipation.",
-  "gajpipal": "Enhances digestive health, supports respiratory function, and relieves pain. Overuse may cause heat buildup in the body.",
-  "sonth": "Aids digestion, reduces inflammation, and boosts immunity. High consumption may lead to heartburn or irritation.",
-  "lassha": "Supports digestion, relieves pain, and promotes overall wellness. Excess intake may cause stomach discomfort or acidity.",
-  "shallaki": "Reduces inflammation, alleviates joint pain, and supports mobility. High doses may cause nausea or dizziness.",
-  "spinach": "Boosts immunity, supports digestion, and provides essential nutrients. Overconsumption may lead to kidney stone formation.",
-  "corn": "Supports digestion, provides energy, and aids in heart health. Excess intake may cause bloating or digestive discomfort.",
-  "varun": "Supports kidney health, promotes detoxification, and balances fluid retention. Overuse may cause excessive urination.",
-  "pashanbhed": "Supports kidney and urinary tract health, aids detoxification, and relieves pain. May lead to dehydration if taken in excess.",
-  "methi": "Supports digestion, regulates blood sugar, and promotes hair growth. High intake may cause bloating or gas.",
-  "singhada": "Aids digestion, supports weight loss, and promotes skin health. Overconsumption may cause bloating or indigestion.",
-  "amla": "Boosts immunity, improves skin health, and supports digestion. Excess intake may lead to acidity or sore throat.",
-  "chhoti harad": "Supports digestion, detoxifies the body, and promotes longevity. Overuse may cause dehydration or excessive bowel movements.",
-  "nausadar": "Relieves respiratory congestion, aids digestion, and improves metabolism. Excessive intake may cause irritation or dehydration.",
-  "jeera": "Aids digestion, reduces bloating, and supports weight management. Overuse may cause acidity or heartburn.",
-  "neembu sat": "Enhances digestion, provides vitamin C, and promotes detoxification. Excess intake may cause acidity or enamel erosion.",
-  "kali mirch": "Boosts metabolism, improves respiratory health, and enhances immunity. Overuse may cause stomach irritation or heartburn.",
-  "chhoti peepal": "Supports respiratory function, aids digestion, and relieves cold symptoms. High intake may lead to throat irritation.",
-  "neembu": "Rich in antioxidants, supports immunity, and enhances digestion. Overuse may lead to acidity or dental sensitivity.",
-  "chini": "Provides sweetness, energy source, and enhances taste. Excess consumption may cause obesity or diabetes risk.",
-  "anardana": "Aids digestion, rich in antioxidants, and adds tangy flavor. Overuse may lead to acidity or stomach discomfort.",
-  "amchur": "Enhances digestion, rich in vitamin C, and provides tangy taste. Excess intake may cause acidity or gastric irritation.",
-  "samudra lavan": "Balances electrolytes, aids digestion, and enhances mineral absorption. Overuse may lead to high blood pressure.",
-  "dhaniya": "Supports digestion, has cooling properties, and detoxifies the body. Excessive use may cause allergic reactions in some individuals.",
-  "kala lavan": "Improves digestion, enhances metabolism, and balances electrolytes. High intake may cause bloating or dehydration.",
-  "dalchini": "Regulates blood sugar, improves digestion, and has anti-inflammatory properties. Overuse may lead to liver toxicity.",
-  "badi elaichi": "Aids digestion, detoxifies the body, and supports respiratory health. Excess intake may cause digestive issues.",
-  "sendha lavan": "Maintains electrolyte balance, supports digestion, and detoxifies the body. High consumption may raise blood pressure levels.",
-  "saunf": "Aids digestion, freshens breath, and reduces bloating. Overuse may cause hormonal imbalances.",
-  "gulkand": "Cools the body, aids digestion, and improves skin health. Excess consumption may lead to weight gain due to its sugar content.",
-  "saunth": "Improves digestion, relieves nausea, and has anti-inflammatory properties. High intake may cause acidity or irritation.",
-  "lal mirch": "Boosts metabolism, enhances flavor, and improves digestion. Overuse may lead to stomach ulcers or digestive discomfort.",
-  "hing": "Reduces bloating, improves digestion, and relieves stomach discomfort. High intake may cause dizziness or nausea.",
-  "hing bhuna": "Reduces gas formation, aids digestion, and relieves stomach discomfort. Overuse may lead to acidity or dehydration.",
-  "ashvagandha": "Adaptogen, stress relief, energy, and immunity. High intake may cause drowsiness or digestive issues.",
-  "shilajit": "Boosts energy, enhances stamina, and supports overall vitality. Excess consumption may cause overheating or dehydration.",
-  "shilajeet": "Enhances cognitive function, supports immune health, and improves endurance. Overuse may lead to hormonal imbalances.",
-  "godugdha": "Nourishes the body, strengthens bones, and enhances digestion. Excess intake may lead to lactose intolerance symptoms in some people.",
-  "satavari": "Supports reproductive health, balances hormones, and improves lactation. High doses may cause stomach upset or allergic reactions.",
-  "manjishtha": "Purifies blood, promotes clear skin, and supports liver function. Excessive use may lead to digestive disturbances.",
-  "kustha": "Supports skin health, relieves itching, and promotes wound healing. Overuse may cause dryness or allergic reactions.",
-  "tagara": "Calms the mind, promotes relaxation, and supports sleep quality. High doses may cause drowsiness or lethargy.",
-  "sharkara": "Natural sweetener, provides energy, and supports digestion. Overuse may contribute to weight gain or diabetes risk.",
-  "daruharidra": "Supports liver health, improves digestion, and has antibacterial properties. High intake may cause nausea or digestive issues.",
-  "yasti": "Soothes the throat, supports respiratory health, and improves digestion. Overuse may lead to high blood pressure or hormonal imbalance.",
-  "meda": "Supports brain health, nourishes tissues, and boosts immunity. High doses may cause dizziness or digestive discomfort.",
-  "yavani": "Aids digestion, relieves bloating, and supports metabolism. Overuse may lead to stomach irritation or acidity.",
-  "sayonak": "Promotes joint health, reduces inflammation, and supports overall wellness. Excessive intake may cause allergic reactions or digestive issues.",
-
-  "goghrita": "nourishes tissues, improves digestion, and supports brain function.",
-  "brahmi": "enhances memory, reduces stress, and improves cognitive function.",
-  "syama": "supports skin health, detoxifies, and aids in digestion.",
-  "trivrt": "acts as a mild laxative, supports liver health, and detoxifies the body.",
-  "gougrit": "improves digestion, nourishes tissues, and enhances mental clarity.",
-  "durvadi": "cools the body, promotes skin health, and reduces inflammation.",
-  "neel kamal": "calms the mind, promotes relaxation, and supports mental health.",
-  "danti": "supports liver function, detoxifies, and improves digestion.",
-  "sankhapuspi": "boosts memory, calms the nervous system, and improves sleep.",
-  "nrpadruma": "supports respiratory health, reduces inflammation, and improves immunity.",
-  "saptala": "aids in detoxification, supports kidney function, and purifies blood.",
-  "kateri chhoti": "reduces inflammation, supports pain relief, and improves immunity.",
-  "kala vasa": "clears respiratory passages, supports lung health, and relieves cough.",
-  "safed vasa": "helps in treating respiratory issues, reduces phlegm, and improves breathing.",
-  "banfsa": "soothes sore throat, helps with cough, and supports immune function.",
-  "desi": "nourishes the body, supports digestion, and enhances overall vitality.",
-  "pippili chhoti": "aids digestion, supports lung health, and boosts metabolism.",
-  "daalchini": "regulates blood sugar, improves digestion, and enhances immunity.",
-  "lavang": "relieves toothache, improves digestion, and has antibacterial properties.",
-  "tejpatra": "improves metabolism, enhances digestion, and supports heart health.",
-  "lisoda": "supports digestive health, relieves cough, and improves gut function.",
-  "amaltash": "acts as a natural laxative, detoxifies the body, and improves digestion.",
-  "datura": "supports respiratory function, relieves pain, and helps with asthma.",
-  "sankhpuspi": "boosts memory, calms the nervous system, and improves sleep.",
-  "shatavar": "supports female reproductive health and hormonal balance.",
-  "safed musli": "improves stamina, vitality, and immunity.",
-  "vidarikand": "acts as a rejuvenating herb and supports kidney health.",
-  "tvak": "supports skin health and has anti-inflammatory properties.",
-  "kala namak": "aids digestion, improves metabolism, and balances electrolytes.",
-  "meetha soda": "helps neutralize acidity and improves digestion.",
-  "nimbu sat": "rich in vitamin C, boosts immunity, and improves digestion.",
-  "gulab phool": "cooling effect, good for skin health, and aids digestion.",
-  "kala dana": "improves digestion, supports heart health, and reduces bloating.",
-  "sounf": "aids digestion, freshens breath, and has cooling properties.",
-  "sanay": "natural laxative, supports bowel movement, and relieves constipation.",
-  "sounth": "reduces inflammation, aids digestion, and relieves nausea.",
-  "sendha namak": "balances electrolytes, improves digestion, and detoxifies the body.",
-  "bala": "improves muscle strength, supports joint health, and enhances stamina.",
-  "vidhara": "supports reproductive health and relieves stress.",
-  "bel": "aids digestion, supports liver health, and relieves diarrhea.",
-  "mochras": "has cooling properties, supports skin health, and reduces inflammation.",
-  "shuddha bhang": "relieves pain, supports mental relaxation, and aids sleep.",
-  "dhai": "supports skin health, detoxifies blood, and has anti-inflammatory properties.",
-  "indrayan": "helps with constipation, detoxifies the body, and supports liver function.",
-  "tankan bhasm": "supports respiratory health and improves digestion.",
-  "saindhava lavana": "improves digestion and balances electrolytes.",
-  "citraka": "boosts digestion and metabolism.",
-  "pippalimula": "improves digestion, supports respiratory function, and boosts metabolism.",
-  "satahva": "aids digestion, relieves bloating, and supports lactation.",
-  "vriddadauka": "supports bone health and improves strength.",
-  "surjana": "boosts immune function, aids digestion, and supports joint health.",
-  "kutaki": "supports liver health, detoxifies the body, and improves digestion.",
-  "chavya": "improves digestion, relieves bloating, and enhances metabolism.",
-  "sariva": "purifies blood, cools the body, and supports skin health.",
-  "kuttha": "supports respiratory health, relieves cough, and aids digestion.",
-  "chhoti elaichi": "aids digestion, freshens breath, and has antioxidant properties.",
-  "naagkeshar": "supports skin health, reduces inflammation, and aids digestion.",
-  "phoolpriyangu": "cools the body, supports skin health, and improves digestion.",
-  "neelotpal": "helps with fever, detoxifies blood, and supports skin health.",
-  "harad": "improves digestion, detoxifies the body, and enhances bowel movement.",
-  "abhraka bhasma": "boosts energy, supports respiratory health, and enhances brain function.",
-  "lauh bhasma": "supports blood formation, improves metabolism, and boosts immunity.",
-  "bhangra": "supports hair growth, detoxifies the liver, and strengthens immunity.",
-  "java": "supports skin health, reduces inflammation, and detoxifies the body.",
-  "tulsi": "boosts immunity, supports respiratory health, and relieves stress.",
-  "banafsa": "helps with respiratory issues, relieves cough, and supports throat health.",
-  "amaltas": "acts as a natural laxative, detoxifies the body, and improves digestion.",
-  "chhoti pipal": "boosts respiratory health, improves digestion, and enhances metabolism.",
-  "chhoti kateli": "relieves cough, clears mucus, and supports lung health.",
-  "kakdasingi": "boosts immunity, supports respiratory health, and relieves cough.",
-  "rudanti": "improves respiratory health, reduces inflammation, and enhances lung function.",
-  "marich": "boosts metabolism, improves digestion, and enhances respiratory function.",
-  "akarkara": "improves nerve health, supports digestion, and relieves toothache.",
-  "abhrak bahsma": "boosts immunity, improves stamina, and enhances brain function.",
-  "muktashukti bhasma": "supports digestion, strengthens bones, and improves metabolism.",
-  "kapardak bhasma": "aids digestion, reduces acidity, and supports bone health.",
-  "badam tail": "nourishes skin and hair, improves brain function, and supports heart health.",
-  "kesar": "enhances complexion, improves digestion, and boosts mood.",
-  "saffron": "rich in antioxidants, improves memory, and supports eye health.",
-  "almond": "supports brain health, strengthens bones, and improves digestion.",
-  "dhamasa": "purifies blood, supports respiratory health, and reduces inflammation.",
-  "black pepper": "boosts metabolism, improves digestion, and enhances nutrient absorption.",
-  "tomar": "supports dental health, relieves joint pain, and has antimicrobial properties.",
-  "bud": "supports oral health, improves digestion, and has antiseptic properties.",
-  "khadir": "detoxifies the skin, purifies blood, and strengthens gums.",
-  "rind": "aids digestion, reduces bloating, and supports liver health.",
-  "elaichi": "freshens breath, improves digestion, and supports respiratory health.",
-  "vidang": "removes intestinal worms, supports digestion, and detoxifies the body.",
-  "mishwak": "improves oral health, strengthens gums, and fights bacteria.",
-  "apamarg": "detoxifies the body, supports kidney health, and relieves pain.",
-  "bakul": "strengthens gums, supports oral health, and relieves tooth pain.",
-  "pippli chhoti": "improves digestion, supports respiratory health, and enhances metabolism.",
-  "vajradanti": "strengthens teeth, supports oral health, and prevents cavities.",
-  "kasni": "supports liver health, improves digestion, and detoxifies the body.",
-  "ginger": "reduces inflammation, aids digestion, and relieves nausea.",
-  "ratanjot": "Helps to protect skin.",
-  "masha": "Nourishes muscles and bones.",
-  "sesame": "Helps to nourishes muscles.",
-  "sesame oil": "Helps to nourishes muscles and bones.",
-  "karpur": "Helps to stimulate blood circulation.",
-  "nishot": "Aids in digestion and supports liver health.",
-  "yashti madhu": "Known for its soothing effects on the throat and digestive system.",
-  "jiru": "Enhances digestion and helps reduce bloating.",
-  "svarjik sahara": "Acts as a natural antacid and supports gut health.",
-  "galo": "Boosts immunity and helps detoxify the body."
+  "makoy": {
+    "advantages": "Improves liver function and soothes ulcers.",
+    "disadvantages": "May cause dizziness or stomach discomfort in some individuals."
+  },
+  "giloy": {
+    "advantages": "Boosts immunity and treats chronic fever.",
+    "disadvantages": "Can cause constipation and lower blood sugar levels."
+  },
+  "kutki": {
+    "advantages": "Protects the liver and helps with digestive issues.",
+    "disadvantages": "May lead to nausea and low blood pressure if overused."
+  },
+  "karkatashriringi": {
+    "advantages": "Used for respiratory disorders and asthma.",
+    "disadvantages": "Excessive use may cause digestive upset."
+  },
+  "maricha": {
+    "advantages": "Enhances digestion and metabolism.",
+    "disadvantages": "Can cause stomach irritation when consumed in large amounts."
+  },
+  "bhumi amla": {
+    "advantages": "Treats liver disorders and aids digestion.",
+    "disadvantages": "May cause low blood pressure and dizziness."
+  },
+  "ajagandha": {
+    "advantages": "Supports digestion and respiratory health.",
+    "disadvantages": "Can lead to nausea and digestive discomfort if taken in excess."
+  },
+  "ajamoda": {
+    "advantages": "Relieves bloating and digestive issues.",
+    "disadvantages": "Overuse may cause nausea and headaches."
+  },
+  "amalaki": {
+    "advantages": "Powerful antioxidant, improves immunity.",
+    "disadvantages": "May cause constipation if consumed in large quantities."
+  },
+  "aragvadha": {
+    "advantages": "Natural laxative, useful for skin disorders.",
+    "disadvantages": "Can cause diarrhea and dehydration if overused."
+  },
+  "arka": {
+    "advantages": "Detoxifies and supports respiratory health.",
+    "disadvantages": "Can be toxic if consumed in high doses."
+  },
+  "asana": {
+    "advantages": "Helps in diabetes and wound healing.",
+    "disadvantages": "May cause digestive upset if consumed in excess."
+  },
+  "ashoka": {
+    "advantages": "Supports female reproductive health.",
+    "disadvantages": "May cause nausea or skin rashes in some individuals."
+  },
+  "atasi": {
+    "advantages": "Rich in omega-3, supports heart health.",
+    "disadvantages": "May cause digestive issues if not consumed with enough water."
+  },
+  "atibala": {
+    "advantages": "Boosts immunity and reduces inflammation.",
+    "disadvantages": "Can cause digestive disturbances if overused."
+  },
+  "ativisha": {
+    "advantages": "Useful for fever and digestive disorders.",
+    "disadvantages": "Toxic if consumed in high doses."
+  },
+  "bakuchi": {
+    "advantages": "Improves skin conditions and pigmentation.",
+    "disadvantages": "May cause skin irritation when used externally."
+  },
+  "bibhitaki": {
+    "advantages": "Aids digestion and detoxification.",
+    "disadvantages": "Can cause dryness in body tissues if overused."
+  },
+  "chandrasura": {
+    "advantages": "Enhances metabolism and immunity.",
+    "disadvantages": "Overconsumption may cause nausea."
+  },
+  "chitraka": {
+    "advantages": "Boosts digestion and reduces bloating.",
+    "disadvantages": "Can cause stomach irritation if taken in high doses."
+  },
+  "gambhari": {
+    "advantages": "Improves vitality and supports the nervous system.",
+    "disadvantages": "May cause drowsiness or fatigue."
+  },
+  "gokshura": {
+    "advantages": "Enhances kidney and urinary health.",
+    "disadvantages": "May cause stomach upset and dizziness."
+  },
+  "guduchi": {
+    "advantages": "Boosts immunity and detoxifies the body.",
+    "disadvantages": "Can lower blood sugar levels excessively in diabetics."
+  },
+  "guggulu": {
+    "advantages": "Reduces cholesterol and joint pain.",
+    "disadvantages": "Can cause skin rashes and upset stomach."
+  },
+  "gunja": {
+    "advantages": "Used in external applications for skin issues.",
+    "disadvantages": "Highly toxic if ingested internally."
+  },
+  "haridra": {
+    "advantages": "Anti-inflammatory and supports liver health.",
+    "disadvantages": "Can cause stomach upset in sensitive individuals."
+  },
+  "haritaki": {
+    "advantages": "Aids digestion and detoxification.",
+    "disadvantages": "Can cause dehydration and fatigue if overused."
+  },
+  "hingu": {
+    "advantages": "Relieves gas and improves digestion.",
+    "disadvantages": "May cause headaches and nausea if overused."
+  },
+  "jatamansi": {
+    "advantages": "Supports mental calmness and sleep.",
+    "disadvantages": "Excessive use may lead to drowsiness."
+  },
+  "jatiphala": {
+    "advantages": "Improves digestion and relieves stress.",
+    "disadvantages": "Can cause hallucinations or toxicity in high doses."
+  },
+  "kampillaka": {
+    "advantages": "Helps in deworming and liver health.",
+    "disadvantages": "May cause nausea and dizziness."
+  },
+  "kanchanara": {
+    "advantages": "Supports thyroid and lymphatic health.",
+    "disadvantages": "May cause digestive discomfort."
+  },
+  "kankola": {
+    "advantages": "Used in digestive and respiratory support.",
+    "disadvantages": "Can cause nausea in large doses."
+  },
+  "kantakari": {
+    "advantages": "Supports respiratory and immune health.",
+    "disadvantages": "May cause throat irritation if taken in excess."
+  },
+  "kapikachhu": {
+    "advantages": "Enhances brain function and libido.",
+    "disadvantages": "Can cause nausea and insomnia."
+  },
+  "karavira": {
+    "advantages": "Used externally for wound healing.",
+    "disadvantages": "Toxic if ingested internally."
+  },
+  "karanja": {
+    "advantages": "Beneficial for skin diseases and liver health.",
+    "disadvantages": "Can cause skin irritation when applied excessively."
+  },
+  "karpasa": {
+    "advantages": "Supports skin and hair health.",
+    "disadvantages": "May cause allergic reactions in sensitive individuals."
+  },
+  "katuki": {
+    "advantages": "Liver detoxifier and promotes digestion.",
+    "disadvantages": "Can cause low blood pressure if overused."
+  },
+  "ketaki": {
+    "advantages": "Used in perfumes and traditional medicines.",
+    "disadvantages": "May cause allergic skin reactions."
+  },
+  "neem": {
+    "advantages": "Blood purifier, anti-inflammatory, supports skin health and dental care.",
+    "disadvantages": "Can cause liver damage if consumed excessively."
+  },
+  "mulethi": {
+    "advantages": "Supports respiratory health, treats stomach ulcers, and reduces skin inflammation.",
+    "disadvantages": "Can cause high blood pressure and water retention if overused."
+  },
+  "babool": {
+    "advantages": "Promotes oral health, aids wound healing, and supports skin conditions.",
+    "disadvantages": "May cause allergic reactions in sensitive individuals."
+  },
+  "chirchita": {
+    "advantages": "Acts as a bitter tonic, reduces fever, and supports liver health.",
+    "disadvantages": "May cause stomach irritation if consumed in large quantities."
+  },
+  "ashwagandha": {
+    "advantages": "Acts as an adaptogen, supports stress relief, energy, and immunity.",
+    "disadvantages": "Can cause drowsiness and stomach upset in some people."
+  },
+  "bael": {
+    "advantages": "Aids digestion, relieves constipation, supports ulcerative colitis, and diarrhea.",
+    "disadvantages": "Can cause constipation if consumed in excess."
+  },
+  "aloe vera": {
+    "advantages": "Reduces dental plaque, accelerates wound healing, prevents wrinkles, and manages blood sugar.",
+    "disadvantages": "Can cause diarrhea and electrolyte imbalances if overused."
+  },
+  "kulanjan": {
+    "advantages": "Helps in rheumatoid arthritis, boosts immunity, and supports respiratory issues.",
+    "disadvantages": "May cause digestive discomfort in sensitive individuals."
+  },
+  "kalmegh": {
+    "advantages": "Reduces inflammation, fights infections, supports liver health, and treats fever.",
+    "disadvantages": "Can cause loss of appetite and stomach discomfort."
+  },
+  "shatavari": {
+    "advantages": "Supports female reproductive health, enhances lactation, and aids digestion.",
+    "disadvantages": "May cause allergic reactions or affect hormone levels in some individuals."
+  },
+  "shirish": {
+    "advantages": "Helps with allergies and reduces inflammation.",
+    "disadvantages": "May cause dizziness or stomach upset in sensitive individuals."
+  },
+  "adusa": {
+    "advantages": "Relieves bronchitis, asthma, cough, and improves breathing.",
+    "disadvantages": "Overuse may lead to nausea or vomiting."
+  },
+  "ratti": {
+    "advantages": "Treats skin conditions, reduces inflammation, and promotes wound healing.",
+    "disadvantages": "Toxic if consumed improperly; should be used under medical supervision."
+  },
+  "pippali": {
+    "advantages": "Improves respiratory health, relieves chronic coughs, and aids in asthma treatment.",
+    "disadvantages": "Excessive use can cause digestive issues or heartburn."
+  },
+  "kanghi": {
+    "advantages": "Supports digestive health, relieves joint pain, and helps with gout.",
+    "disadvantages": "May cause stomach discomfort if taken in large amounts."
+  },
+  "tamalpatra": {
+    "advantages": "Supports gastric health, respiratory well-being, and oral health.",
+    "disadvantages": "Overconsumption may cause nausea or dizziness."
+  },
+  "ananas": {
+    "advantages": "Aids digestion, reduces inflammation, and promotes wound healing.",
+    "disadvantages": "May cause allergic reactions or oral irritation."
+  },
+  "bharangi": {
+    "advantages": "Relieves allergic rhinitis, sinusitis, and respiratory disorders.",
+    "disadvantages": "May cause mild digestive discomfort in sensitive individuals."
+  },
+  "chitvan": {
+    "advantages": "Improves digestion, boosts metabolism, and reduces abdominal pain.",
+    "disadvantages": "Can cause dizziness if taken in excess."
+  },
+  "ankola": {
+    "advantages": "Supports wound healing, treats skin diseases, helps with diabetes and diarrhea.",
+    "disadvantages": "Can cause allergic reactions if not properly administered."
+  },
+  "senna": {
+    "advantages": "Acts as a natural laxative and supports digestive cleansing.",
+    "disadvantages": "Overuse can lead to dehydration, cramping, and dependency."
+  },
+  "yashtimadhu": {
+    "advantages": "Soothes the throat and provides digestive relief.",
+    "disadvantages": "Excess intake can lead to high blood pressure and potassium imbalance."
+  },
+  "javantri": {
+    "advantages": "Stimulates appetite and aids digestion.",
+    "disadvantages": "Overuse may cause hallucinations or palpitations."
+  },
+  "elchi": {
+    "advantages": "Freshens breath and supports digestion.",
+    "disadvantages": "Excessive intake can cause allergic reactions or gallstone complications."
+  },
+  "laving": {
+    "advantages": "Relieves toothache and has antimicrobial properties.",
+    "disadvantages": "Overuse can cause mouth irritation or allergic reactions."
+  },
+  "shitalchini": {
+    "advantages": "Acts as an anti-inflammatory agent and digestive aid.",
+    "disadvantages": "High doses can cause liver toxicity."
+  },
+  "jaifal": {
+    "advantages": "Supports sleep and offers pain relief.",
+    "disadvantages": "Overdose can cause hallucinations and nausea."
+  },
+  "phudina": {
+    "advantages": "Provides a cooling effect and relieves nausea.",
+    "disadvantages": "Can cause heartburn in sensitive individuals."
+  },
+  "kapur": {
+    "advantages": "Relieves chest congestion and offers pain relief.",
+    "disadvantages": "Toxic if ingested in large quantities."
+  },
+  "bhringraj": {
+    "advantages": "Promotes hair growth and supports liver health.",
+    "disadvantages": "May cause allergic skin reactions in some users."
+  },
+  "punarnava": {
+    "advantages": "Supports kidney and liver function.",
+    "disadvantages": "Excessive use can lead to low blood pressure or dehydration."
+  },
+  "arjun": {
+    "advantages": "Strengthens heart health.",
+    "disadvantages": "Can lower blood pressure excessively if overused."
+  },
+  "daru haldi": {
+    "advantages": "Has anti-inflammatory and antibacterial properties.",
+    "disadvantages": "May cause stomach upset if taken in high doses."
+  },
+  "javantr": {
+    "advantages": "Stimulates appetite and aids digestion.",
+    "disadvantages": "May lead to nausea or dizziness if consumed in excess."
+  },
+  "shunthi": {
+    "advantages": "Aids digestion, reduces nausea, and fights inflammation.",
+    "disadvantages": "Can cause heartburn or digestive upset in large doses."
+  },
+  "senna leaves": {
+    "advantages": "Acts as a natural laxative and supports bowel cleansing.",
+    "disadvantages": "May lead to dependency or dehydration if overused."
+  },
+  "sunth": {
+    "advantages": "Supports digestion, reduces nausea, and relieves bloating.",
+    "disadvantages": "Overuse can cause heartburn or stomach discomfort."
+  },
+  "ajwain": {
+    "advantages": "Supports digestion and reduces bloating and acidity.",
+    "disadvantages": "May cause nausea or headaches in sensitive individuals."
+  },
+  "himej": {
+    "advantages": "Detoxifies the body, relieves constipation, and boosts immunity.",
+    "disadvantages": "Excessive consumption may lead to digestive discomfort."
+  },
+  "nisoth": {
+    "advantages": "Acts as a natural laxative, aids detoxification, and supports liver health.",
+    "disadvantages": "May cause digestive issues when taken in large amounts."
+  },
+  "nisot": {
+    "advantages": "Acts as a natural laxative, aids detoxification, and supports liver health.",
+    "disadvantages": "May cause digestive issues when taken in large amounts."
+  },
+  "badamtaila": {
+    "advantages": "Nourishes skin and hair, protecting against oxidative damage.",
+    "disadvantages": "May cause skin allergies in sensitive individuals."
+  },
+  "bibhitaka": {
+    "advantages": "Supports immune function and promotes healthy digestion.",
+    "disadvantages": "Overuse may cause digestive discomfort."
+  },
+  "vidanga": {
+    "advantages": "Detoxifies the body, improves digestion, and enhances skin clarity.",
+    "disadvantages": "May cause mild stomach irritation in some individuals."
+  },
+  "musta": {
+    "advantages": "Reduces inflammation, supports digestion, and relieves pain.",
+    "disadvantages": "High doses may cause stomach upset."
+  },
+  "eranda": {
+    "advantages": "Promotes joint health, detoxification, and digestive support.",
+    "disadvantages": "May lead to diarrhea if consumed in excess."
+  },
+  "dhataki": {
+    "advantages": "Supports menstrual health and promotes skin rejuvenation.",
+    "disadvantages": "May cause allergic reactions in some users."
+  },
+  "camphor": {
+    "advantages": "Relieves pain, supports respiratory health, and has antiseptic properties.",
+    "disadvantages": "Toxic if ingested in large amounts."
+  },
+  "mishri": {
+    "advantages": "Acts as a natural sweetener, aids digestion, and soothes sore throats.",
+    "disadvantages": "Excess consumption may lead to high blood sugar levels."
+  },
+  "nishoth": {
+    "advantages": "Supports detoxification, aids digestion, and assists with weight management.",
+    "disadvantages": "Can cause digestive discomfort if overused."
+  },
+  "wheatgrass": {
+    "advantages": "Boosts immunity, detoxifies the body, and enhances energy levels.",
+    "disadvantages": "May cause nausea or appetite loss in sensitive individuals."
+  },
+  "laung": {
+    "advantages": "Supports oral health, relieves pain, and enhances digestion.",
+    "disadvantages": "Overuse can lead to mouth irritation or allergic reactions."
+  },
+  "nilghiri": {
+    "advantages": "Promotes respiratory health, relieves congestion, and offers antimicrobial benefits.",
+    "disadvantages": "May cause skin irritation or allergic reactions when applied topically."
+  },
+  "gum acacia": {
+    "advantages": "Supports digestion, acts as a binder, and promotes wound healing.",
+    "disadvantages": "May cause bloating or gas in some individuals."
+  },
+  "talcum": {
+    "advantages": "Absorbs moisture, reduces friction, and soothes the skin.",
+    "disadvantages": "Inhalation of talcum powder can pose respiratory risks."
+  },
+  "trikatu churna": {
+    "advantages": "Relieves respiratory conditions like asthma, cough, and cold.",
+    "disadvantages": "Can cause heartburn or digestive irritation when overused."
+  },
+  "swasari ras": {
+    "advantages": "Helps loosen mucus and makes it easier to expel.",
+    "disadvantages": "May cause digestive upset if taken excessively."
+  },
+  "sitopaladi churna": {
+    "advantages": "Relieves dry and wet cough, fatigue, and burning sensations.",
+    "disadvantages": "Overconsumption may lead to digestive discomfort."
+  },
+  "moti pishti": {
+    "advantages": "Enhances skin health, promotes cooling, and supports emotional well-being.",
+    "disadvantages": "May cause cold sensitivity or digestive discomfort if taken in excess."
+  },
+  "godanti bhasma": {
+    "advantages": "Strengthens bones, supports overall vitality, and enhances immune function.",
+    "disadvantages": "Overconsumption can lead to calcium imbalance or digestive issues."
+  },
+  "punarnavadi mandoor": {
+    "advantages": "Supports kidney function, improves blood circulation, and aids in detoxification.",
+    "disadvantages": "May cause mild digestive issues or allergic reactions in sensitive individuals."
+  },
+  "guggul shuddh": {
+    "advantages": "Supports joint health, reduces inflammation, and aids in weight management.",
+    "disadvantages": "Can cause headaches, nausea, or skin rashes in some cases."
+  },
+  "mukta shukti bhasma": {
+    "advantages": "Enhances skin health, boosts immunity, and supports overall vitality.",
+    "disadvantages": "Excessive use might cause digestive issues or calcium imbalance."
+  },
+  "mahat vidhvansan ras": {
+    "advantages": "Reduces joint pain, alleviates inflammation, and promotes mobility.",
+    "disadvantages": "May cause nausea, dizziness, or stomach discomfort if overused."
+  },
+  "aamvatari ras": {
+    "advantages": "Provides relief from joint pain, reduces inflammation, and supports overall joint health.",
+    "disadvantages": "Excessive intake can lead to stomach upset or dizziness."
+  },
+  "vrihat vatchintamani ras": {
+    "advantages": "Supports overall vitality, improves digestion, and enhances mental clarity.",
+    "disadvantages": "High doses may cause stomach issues or nausea."
+  },
+  "nirgundi": {
+    "advantages": "Relieves pain and inflammation, supports joint health, and promotes respiratory wellness.",
+    "disadvantages": "May cause skin irritation or allergic reactions in sensitive individuals."
+  },
+  "nagarmotha": {
+    "advantages": "Aids digestion, relieves stress, and supports skin health.",
+    "disadvantages": "Excessive consumption may lead to digestive discomfort."
+  },
+  "vaividang": {
+    "advantages": "Supports digestive health, enhances metabolism, and promotes detoxification.",
+    "disadvantages": "May cause nausea or digestive irritation when consumed in large amounts."
+  },
+  "vacha": {
+    "advantages": "Enhances cognitive function, supports mental clarity, and improves speech and communication.",
+    "disadvantages": "High doses may lead to hallucinations or kidney irritation."
+  },
+  "devdaru": {
+    "advantages": "Relieves pain, reduces inflammation, and supports respiratory health.",
+    "disadvantages": "May cause skin sensitivity or mild allergic reactions."
+  },
+  "chirayta": {
+    "advantages": "Supports detoxification, boosts immunity, and aids in digestion.",
+    "disadvantages": "Can cause nausea or dizziness when taken in excess."
+  },
+  "baheda": {
+    "advantages": "Supports digestive health, improves skin texture, and enhances respiratory function.",
+    "disadvantages": "May cause dry mouth or gastrointestinal upset if consumed in large quantities."
+  },
+  "gajpipal": {
+    "advantages": "Enhances digestive health, supports respiratory function, and relieves pain.",
+    "disadvantages": "Overuse can lead to stomach irritation or acid reflux."
+  },
+  "sonth": {
+    "advantages": "Natural anti-inflammatory, improves digestion, boosts immunity.",
+    "disadvantages": "May cause heartburn or digestive discomfort in high doses."
+  },
+  "lassha": {
+    "advantages": "Natural pain reliever, supports digestion, boosts overall vitality.",
+    "disadvantages": "May cause stomach upset if consumed in excess."
+  },
+  "shallaki": {
+    "advantages": "Natural anti-inflammatory, improves joint flexibility, supports mobility.",
+    "disadvantages": "May cause nausea or skin rashes in sensitive individuals."
+  },
+  "spinach": {
+    "advantages": "Rich in iron and vitamins, supports eye health, boosts immunity.",
+    "disadvantages": "May cause kidney stones due to high oxalate content if consumed excessively."
+  },
+  "corn": {
+    "advantages": "Rich in fiber, provides energy, supports heart health.",
+    "disadvantages": "High in starch; excessive intake may increase blood sugar levels."
+  },
+  "varun": {
+    "advantages": "Promotes kidney function, natural diuretic, detoxifying properties.",
+    "disadvantages": "May cause dehydration if consumed in large amounts."
+  },
+  "pashanbhed": {
+    "advantages": "Supports kidney health, aids in urinary tract wellness, natural detoxifier.",
+    "disadvantages": "Excessive use may lead to electrolyte imbalance."
+  },
+  "methi": {
+    "advantages": "Regulates blood sugar, boosts digestion, promotes hair growth.",
+    "disadvantages": "May cause body odor and digestive issues if overused."
+  },
+  "singhada": {
+    "advantages": "Aids digestion, supports weight loss, promotes skin health.",
+    "disadvantages": "May cause bloating or constipation in some individuals."
+  },
+  "amla": {
+    "advantages": "Boosts immunity, rich in antioxidants, improves digestion.",
+    "disadvantages": "May cause acidity or digestive discomfort if consumed in excess."
+  },
+  "chhoti harad": {
+    "advantages": "Promotes digestion, detoxifies the body, supports longevity.",
+    "disadvantages": "May cause dehydration or electrolyte imbalance if overused."
+  },
+  "nausadar": {
+    "advantages": "Relieves respiratory congestion, improves digestion, boosts metabolism.",
+    "disadvantages": "May irritate the digestive tract or respiratory system if consumed in large amounts."
+  },
+  "jeera": {
+    "advantages": "Aids digestion, reduces bloating, supports weight management.",
+    "disadvantages": "Excessive intake may lower blood sugar levels too much."
+  },
+  "neembu sat": {
+    "advantages": "Enhances digestion, rich in vitamin C, promotes detoxification.",
+    "disadvantages": "May cause acidity or dental enamel erosion in high amounts."
+  },
+  "kali mirch": {
+    "advantages": "Boosts metabolism, improves respiratory health, enhances immunity.",
+    "disadvantages": "May cause stomach irritation or heartburn in sensitive individuals."
+  },
+  "chhoti peepal": {
+    "advantages": "Supports respiratory function, aids digestion, relieves cold symptoms.",
+    "disadvantages": "Excess consumption may lead to gastrointestinal discomfort."
+  },
+  "neembu": {
+    "advantages": "Rich in antioxidants, supports immunity, enhances digestion.",
+    "disadvantages": "May cause tooth sensitivity or digestive irritation in high doses."
+  },
+  "chini": {
+    "advantages": "Provides energy, enhances taste, quick energy source.",
+    "disadvantages": "Excessive intake can lead to weight gain and increased blood sugar levels."
+  },
+  "anardana": {
+    "advantages": "Aids digestion, rich in antioxidants, adds tangy flavor.",
+    "disadvantages": "May cause acidity or digestive discomfort if overconsumed."
+  },
+  "amchur": {
+    "advantages": "Rich in vitamin C, improves digestion, enhances taste.",
+    "disadvantages": "Excessive intake can lead to acidity or stomach irritation."
+  },
+  "samudra lavan": {
+    "advantages": "Balances electrolytes, supports digestion, enhances mineral absorption.",
+    "disadvantages": "Excessive consumption can lead to high blood pressure."
+  },
+  "dhaniya": {
+    "advantages": "Aids digestion, has cooling properties, detoxifies the body.",
+    "disadvantages": "May cause allergic reactions or skin irritation in sensitive individuals."
+  },
+  "kala lavan": {
+    "advantages": "Improves digestion, enhances metabolism, balances electrolytes.",
+    "disadvantages": "High intake may contribute to hypertension."
+  },
+  "dalchini": {
+    "advantages": "Regulates blood sugar, improves digestion, anti-inflammatory properties.",
+    "disadvantages": "Overconsumption can cause liver damage due to coumarin content."
+  },
+  "badi elaichi": {
+    "advantages": "Aids digestion, detoxifies the body, supports respiratory health.",
+    "disadvantages": "Excessive intake may cause mouth dryness or heartburn."
+  },
+  "sendha lavan": {
+    "advantages": "Maintains electrolyte balance, supports digestion, detoxifies the body.",
+    "disadvantages": "Overconsumption may lead to high blood pressure."
+  },
+  "saunf": {
+    "advantages": "Aids digestion, freshens breath, reduces bloating.",
+    "disadvantages": "May cause allergic reactions or increased estrogen levels if overused."
+  },
+  "gulkand": {
+    "advantages": "Cools the body, aids digestion, improves skin health.",
+    "disadvantages": "High sugar content may not be suitable for diabetics."
+  },
+  "saunth": {
+    "advantages": "Improves digestion, relieves nausea, has anti-inflammatory properties.",
+    "disadvantages": "May cause heartburn or digestive issues in high doses."
+  },
+  "lal mirch": {
+    "advantages": "Boosts metabolism, enhances flavor, improves digestion.",
+    "disadvantages": "May cause stomach irritation or acidity in sensitive individuals."
+  },
+  "hing": {
+    "advantages": "Reduces bloating, improves digestion, relieves stomach discomfort.",
+    "disadvantages": "Strong taste and smell may be unpleasant for some; can cause headaches."
+  },
+  "hing bhuna": {
+    "advantages": "Reduces gas formation, aids digestion, relieves stomach discomfort.",
+    "disadvantages": "May cause digestive irritation if overconsumed."
+  },
+  "ashvagandha": {
+    "advantages": "Adaptogen, stress relief, boosts energy, enhances immunity.",
+    "disadvantages": "May cause drowsiness, digestive upset, or headaches in some individuals."
+  },
+  "shilajit": {
+    "advantages": "Boosts energy, enhances stamina, supports overall vitality.",
+    "disadvantages": "May cause dizziness or increased iron levels if consumed excessively."
+  },
+  "shilajeet": {
+    "advantages": "Enhances cognitive function, supports immune health, improves endurance.",
+    "disadvantages": "Overuse may cause digestive discomfort or increased uric acid levels."
+  },
+  "godugdha": {
+    "advantages": "Nourishes the body, strengthens bones, enhances digestion.",
+    "disadvantages": "May cause lactose intolerance symptoms in sensitive individuals."
+  },
+  "satavari": {
+    "advantages": "Supports reproductive health, balances hormones, improves lactation.",
+    "disadvantages": "May cause allergic reactions or increased heart rate in some individuals."
+  },
+  "manjishtha": {
+    "advantages": "Purifies blood, promotes clear skin, supports liver function.",
+    "disadvantages": "May cause digestive discomfort or dizziness if overconsumed."
+  },
+  "kustha": {
+    "advantages": "Supports skin health, relieves itching, promotes wound healing.",
+    "disadvantages": "May cause skin irritation or allergic reactions in some cases."
+  },
+  "tagara": {
+    "advantages": "Calms the mind, promotes relaxation, supports sleep quality.",
+    "disadvantages": "May cause drowsiness, dizziness, or digestive issues if overused."
+  },
+  "sharkara": {
+    "advantages": "Natural sweetener, provides energy, supports digestion.",
+    "disadvantages": "Excess intake may lead to weight gain and increased blood sugar levels."
+  },
+  "daruharidra": {
+    "advantages": "Supports liver health, improves digestion, has antibacterial properties.",
+    "disadvantages": "May cause digestive discomfort if consumed in large amounts."
+  },
+  "yasti": {
+    "advantages": "Soothes the throat, supports respiratory health, improves digestion.",
+    "disadvantages": "May cause high blood pressure or low potassium levels if overused."
+  },
+  "meda": {
+    "advantages": "Supports brain health, nourishes tissues, boosts immunity.",
+    "disadvantages": "Excess consumption may cause digestive issues."
+  },
+  "yavani": {
+    "advantages": "Aids digestion, relieves bloating, supports metabolism.",
+    "disadvantages": "Overuse may cause heartburn or nausea."
+  },
+  "sayonak": {
+    "advantages": "Promotes joint health, reduces inflammation, supports overall wellness.",
+    "disadvantages": "May cause digestive discomfort in sensitive individuals."
+  },
+  "goghrita": {
+    "advantages": "Nourishes tissues, improves digestion, supports brain function.",
+    "disadvantages": "High in saturated fats; overconsumption may lead to weight gain."
+  },
+  "brahmi": {
+    "advantages": "Enhances memory, reduces stress, improves cognitive function.",
+    "disadvantages": "May cause fatigue or digestive discomfort if consumed in large amounts."
+  },
+  "syama": {
+    "advantages": "Supports skin health, detoxifies, aids in digestion.",
+    "disadvantages": "May cause digestive irritation if overused."
+  },
+  "trivrt": {
+    "advantages": "Acts as a mild laxative, supports liver health, detoxifies the body.",
+    "disadvantages": "Overconsumption may lead to dehydration or electrolyte imbalance."
+  },
+  "gougrit": {
+    "advantages": "Improves digestion, nourishes tissues, enhances mental clarity.",
+    "disadvantages": "High in fat; excessive intake may lead to weight gain."
+  },
+  "durvadi": {
+    "advantages": "Cools the body, promotes skin health, reduces inflammation.",
+    "disadvantages": "May cause allergic reactions or skin irritation in some individuals."
+  },
+  "neel kamal": {
+    "advantages": "Calms the mind, promotes relaxation, supports mental health.",
+    "disadvantages": "May cause drowsiness or dizziness if consumed in excess."
+  },
+  "danti": {
+    "advantages": "Supports liver function, detoxifies, improves digestion.",
+    "disadvantages": "Overconsumption may lead to digestive discomfort or diarrhea."
+  },
+  "sankhapuspi": {
+    "advantages": "Boosts memory, calms the nervous system, improves sleep.",
+    "disadvantages": "May cause drowsiness or dizziness if taken in large amounts."
+  },
+  "nrpadruma": {
+    "advantages": "Supports respiratory health, reduces inflammation, improves immunity.",
+    "disadvantages": "Excessive consumption may cause digestive discomfort."
+  },
+  "saptala": {
+    "advantages": "Aids in detoxification, supports kidney function, purifies blood.",
+    "disadvantages": "Overuse may lead to dehydration or electrolyte imbalance."
+  },
+  "kateri chhoti": {
+    "advantages": "Reduces inflammation, supports pain relief, improves immunity.",
+    "disadvantages": "May cause skin irritation or allergic reactions."
+  },
+  "kala vasa": {
+    "advantages": "Clears respiratory passages, supports lung health, relieves cough.",
+    "disadvantages": "May cause digestive discomfort if overconsumed."
+  },
+  "safed vasa": {
+    "advantages": "Helps in treating respiratory issues, reduces phlegm, improves breathing.",
+    "disadvantages": "May cause digestive issues if taken in large amounts."
+  },
+  "banfsa": {
+    "advantages": "Soothes sore throat, helps with cough, supports immune function.",
+    "disadvantages": "Excessive intake may lead to nausea or dizziness."
+  },
+  "desi": {
+    "advantages": "Nourishes the body, supports digestion, enhances overall vitality.",
+    "disadvantages": "May cause digestive discomfort if consumed in excess."
+  },
+  "pippili chhoti": {
+    "advantages": "Aids digestion, supports lung health, boosts metabolism.",
+    "disadvantages": "Overuse may cause digestive irritation or heartburn."
+  },
+  "daalchini": {
+    "advantages": "Regulates blood sugar, improves digestion, and enhances immunity.",
+    "disadvantages": "Overconsumption may cause liver damage, mouth sores, or increase heart rate."
+  },
+  "lavang": {
+    "advantages": "Relieves toothache, improves digestion, and has antibacterial properties.",
+    "disadvantages": "Excessive use can cause liver issues and allergic reactions."
+  },
+  "tejpatra": {
+    "advantages": "Improves metabolism, enhances digestion, and supports heart health.",
+    "disadvantages": "May cause drowsiness or allergic reactions in sensitive individuals."
+  },
+  "lisoda": {
+    "advantages": "Supports digestive health, relieves cough, and improves gut function.",
+    "disadvantages": "Excessive intake may lead to digestive discomfort."
+  },
+  "amaltash": {
+    "advantages": "Acts as a natural laxative, detoxifies the body, and improves digestion.",
+    "disadvantages": "Overuse may cause diarrhea or dehydration."
+  },
+  "datura": {
+    "advantages": "Supports respiratory function, relieves pain, and helps with asthma.",
+    "disadvantages": "Highly toxic in large doses, can cause hallucinations and poisoning."
+  },
+  "sankhpuspi": {
+    "advantages": "Boosts memory, calms the nervous system, and improves sleep.",
+    "disadvantages": "Overuse may cause drowsiness and fatigue."
+  },
+  "shatavar": {
+    "advantages": "Supports female reproductive health and hormonal balance.",
+    "disadvantages": "May cause allergic reactions or digestive upset in some people."
+  },
+  "safed musli": {
+    "advantages": "Improves stamina, vitality, and immunity.",
+    "disadvantages": "Overconsumption may lead to digestive issues."
+  },
+  "vidarikand": {
+    "advantages": "Acts as a rejuvenating herb and supports kidney health.",
+    "disadvantages": "Can cause digestive discomfort if taken in large quantities."
+  },
+  "tvak": {
+    "advantages": "Supports skin health and has anti-inflammatory properties.",
+    "disadvantages": "May cause allergic reactions or skin irritation."
+  },
+  "kala namak": {
+    "advantages": "Aids digestion, improves metabolism, and balances electrolytes.",
+    "disadvantages": "Excessive intake can increase sodium levels and affect blood pressure."
+  },
+  "meetha soda": {
+    "advantages": "Helps neutralize acidity and improves digestion.",
+    "disadvantages": "Overuse can disrupt electrolyte balance and cause alkalosis."
+  },
+  "nimbu sat": {
+    "advantages": "Rich in vitamin C, boosts immunity, and improves digestion.",
+    "disadvantages": "Excess consumption may lead to tooth enamel erosion."
+  },
+  "gulab phool": {
+    "advantages": "Cooling effect, good for skin health, and aids digestion.",
+    "disadvantages": "May cause allergies in sensitive individuals."
+  },
+  "kala dana": {
+    "advantages": "Improves digestion, supports heart health, and reduces bloating.",
+    "disadvantages": "Overconsumption may cause digestive discomfort."
+  },
+  "sounf": {
+    "advantages": "Aids digestion, freshens breath, and has cooling properties.",
+    "disadvantages": "Excessive consumption can cause estrogenic effects."
+  },
+  "sanay": {
+    "advantages": "Natural laxative, supports bowel movement, and relieves constipation.",
+    "disadvantages": "Overuse can cause dependency and electrolyte imbalance."
+  },
+  "sounth": {
+    "advantages": "Reduces inflammation, aids digestion, and relieves nausea.",
+    "disadvantages": "Excessive use may lead to heartburn or digestive discomfort."
+  },
+  "sendha namak": {
+    "advantages": "Balances electrolytes, improves digestion, and detoxifies the body.",
+    "disadvantages": "Overconsumption may affect kidney function."
+  },
+  "bala": {
+    "advantages": "Improves muscle strength, supports joint health, and enhances stamina.",
+    "disadvantages": "May cause digestive issues in large doses."
+  },
+  "vidhara": {
+    "advantages": "Supports reproductive health and relieves stress.",
+    "disadvantages": "Overconsumption can cause dizziness or nausea."
+  },
+  "bel": {
+    "advantages": "Aids digestion, supports liver health, and relieves diarrhea.",
+    "disadvantages": "Excess intake can lead to constipation."
+  },
+  "mochras": {
+    "advantages": "Has cooling properties, supports skin health, and reduces inflammation.",
+    "disadvantages": "May cause digestive upset if overused."
+  },
+  "shuddha bhang": {
+    "advantages": "Relieves pain, supports mental relaxation, and aids sleep.",
+    "disadvantages": "Can be addictive and impair cognitive functions if misused."
+  },
+  "dhai": {
+    "advantages": "Supports skin health, detoxifies blood, and has anti-inflammatory properties.",
+    "disadvantages": "May cause digestive discomfort when consumed in large amounts."
+  },
+  "indrayan": {
+    "advantages": "Helps with constipation, detoxifies the body, and supports liver function.",
+    "disadvantages": "Highly toxic in large doses, may cause severe digestive upset."
+  },
+  "tankan bhasm": {
+    "advantages": "Supports respiratory health and improves digestion.",
+    "disadvantages": "Excess use may lead to toxicity."
+  },
+  "saindhava lavana": {
+    "advantages": "Improves digestion and balances electrolytes.",
+    "disadvantages": "Overconsumption can increase sodium levels."
+  },
+  "citraka": {
+    "advantages": "Boosts digestion and metabolism.",
+    "disadvantages": "Can cause mouth ulcers or digestive irritation if overused."
+  },
+  "pippalimula": {
+    "advantages": "Improves digestion, supports respiratory function, and boosts metabolism.",
+    "disadvantages": "Excessive use may cause heartburn."
+  },
+  "satahva": {
+    "advantages": "Aids digestion, relieves bloating, and supports lactation.",
+    "disadvantages": "May cause allergic reactions in sensitive individuals."
+  },
+  "vriddadauka": {
+    "advantages": "Supports bone health and improves strength.",
+    "disadvantages": "Excess use may lead to digestive issues."
+  },
+  "surjana": {
+    "advantages": "Boosts immune function, aids digestion, and supports joint health.",
+    "disadvantages": "Overuse may cause digestive discomfort."
+  },
+  "kutaki": {
+    "advantages": "Supports liver health, detoxifies the body, and improves digestion.",
+    "disadvantages": "High doses may cause nausea or vomiting."
+  },
+  "chavya": {
+    "advantages": "Improves digestion, relieves bloating, and enhances metabolism.",
+    "disadvantages": "Excessive consumption can cause acidity or irritation."
+  },
+  "sariva": {
+    "advantages": "Purifies blood, cools the body, and supports skin health.",
+    "disadvantages": "May cause allergic reactions in sensitive individuals."
+  },
+  "kuttha": {
+    "advantages": "Supports respiratory health, relieves cough, and aids digestion.",
+    "disadvantages": "Excessive use may cause digestive upset or allergic reactions."
+  },
+  "chhoti elaichi": {
+    "advantages": "Aids digestion, freshens breath, and has antioxidant properties.",
+    "disadvantages": "Overconsumption may cause mouth ulcers or allergic reactions."
+  },
+  "naagkeshar": {
+    "advantages": "Supports skin health, reduces inflammation, and aids digestion.",
+    "disadvantages": "High doses may cause nausea or stomach discomfort."
+  },
+  "phoolpriyangu": {
+    "advantages": "Cools the body, supports skin health, and improves digestion.",
+    "disadvantages": "May cause allergic reactions in sensitive individuals."
+  },
+  "neelotpal": {
+    "advantages": "Helps with fever, detoxifies blood, and supports skin health.",
+    "disadvantages": "Overuse may lead to low blood pressure or dizziness."
+  },
+  "harad": {
+    "advantages": "Improves digestion, detoxifies the body, and enhances bowel movement.",
+    "disadvantages": "Excessive use may cause dehydration or digestive discomfort."
+  },
+  "abhraka bhasma": {
+    "advantages": "Boosts energy, supports respiratory health, and enhances brain function.",
+    "disadvantages": "Incorrect dosage may cause metal toxicity."
+  },
+  "lauh bhasma": {
+    "advantages": "Supports blood formation, improves metabolism, and boosts immunity.",
+    "disadvantages": "Overuse may lead to iron overload or digestive issues."
+  },
+  "bhangra": {
+    "advantages": "Supports hair growth, detoxifies the liver, and strengthens immunity.",
+    "disadvantages": "Overuse may cause digestive issues or dizziness."
+  },
+  "java": {
+    "advantages": "Supports skin health, reduces inflammation, and detoxifies the body.",
+    "disadvantages": "May cause allergic reactions in sensitive individuals."
+  },
+  "tulsi": {
+    "advantages": "Boosts immunity, supports respiratory health, and relieves stress.",
+    "disadvantages": "Excess consumption may lead to low blood sugar levels."
+  },
+  "banafsa": {
+    "advantages": "Helps with respiratory issues, relieves cough, and supports throat health.",
+    "disadvantages": "Overuse may cause drowsiness or digestive discomfort."
+  },
+  "amaltas": {
+    "advantages": "Acts as a natural laxative, detoxifies the body, and improves digestion.",
+    "disadvantages": "Excessive use may cause diarrhea or dehydration."
+  },
+  "chhoti pipal": {
+    "advantages": "Boosts respiratory health, improves digestion, and enhances metabolism.",
+    "disadvantages": "Overconsumption may cause throat irritation."
+  },
+  "chhoti kateli": {
+    "advantages": "Relieves cough, clears mucus, and supports lung health.",
+    "disadvantages": "May cause digestive discomfort if overused."
+  },
+  "kakdasingi": {
+    "advantages": "Boosts immunity, supports respiratory health, and relieves cough.",
+    "disadvantages": "Overuse may lead to nausea or dizziness."
+  },
+  "rudanti": {
+    "advantages": "Improves respiratory health, reduces inflammation, and enhances lung function.",
+    "disadvantages": "Excess consumption may cause digestive discomfort."
+  },
+  "marich": {
+    "advantages": "Boosts metabolism, improves digestion, and enhances respiratory function.",
+    "disadvantages": "May cause gastrointestinal irritation in sensitive individuals."
+  },
+  "akarkara": {
+    "advantages": "Improves nerve health, supports digestion, and relieves toothache.",
+    "disadvantages": "High doses may cause irritation or allergic reactions."
+  },
+  "abhrak bahsma": {
+    "advantages": "Boosts immunity, improves stamina, and enhances brain function.",
+    "disadvantages": "Incorrect dosage may lead to metal toxicity."
+  },
+  "muktashukti bhasma": {
+    "advantages": "Supports digestion, strengthens bones, and improves metabolism.",
+    "disadvantages": "Overuse may cause calcium imbalance."
+  },
+  "kapardak bhasma": {
+    "advantages": "Aids digestion, reduces acidity, and supports bone health.",
+    "disadvantages": "Excessive intake may lead to digestive issues."
+  },
+  "badam tail": {
+    "advantages": "Nourishes skin and hair, improves brain function, and supports heart health.",
+    "disadvantages": "May cause allergic reactions in individuals sensitive to nuts."
+  },
+  "kesar": {
+    "advantages": "Enhances complexion, improves digestion, and boosts mood.",
+    "disadvantages": "Excess consumption may lead to nausea or dizziness."
+  },
+  "saffron": {
+    "advantages": "Rich in antioxidants, improves memory, and supports eye health.",
+    "disadvantages": "High doses may cause mood swings or headaches."
+  },
+  "almond": {
+    "advantages": "Supports brain health, strengthens bones, and improves digestion.",
+    "disadvantages": "Overconsumption may cause digestive issues or weight gain."
+  },
+  "dhamasa": {
+    "advantages": "Purifies blood, supports respiratory health, and reduces inflammation.",
+    "disadvantages": "Overuse may cause digestive discomfort."
+  },
+  "black pepper": {
+    "advantages": "Boosts metabolism, improves digestion, and enhances nutrient absorption.",
+    "disadvantages": "May cause stomach irritation if consumed excessively."
+  },
+  "tomar": {
+    "advantages": "Supports dental health, relieves joint pain, and has antimicrobial properties.",
+    "disadvantages": "Excessive use may cause digestive discomfort."
+  },
+  "bud": {
+    "advantages": "Supports oral health, improves digestion, and has antiseptic properties.",
+    "disadvantages": "Overconsumption may lead to digestive issues or allergic reactions."
+  },
+  "khadir": {
+    "advantages": "Detoxifies the skin, purifies blood, and strengthens gums.",
+    "disadvantages": "Excessive use may cause dryness and dehydration."
+  },
+  "rind": {
+    "advantages": "Aids digestion, reduces bloating, and supports liver health.",
+    "disadvantages": "Overconsumption may cause digestive discomfort."
+  },
+  "elaichi": {
+    "advantages": "Freshens breath, improves digestion, and supports respiratory health.",
+    "disadvantages": "Excessive consumption may cause mouth sores or allergies."
+  },
+  "vidang": {
+    "advantages": "Removes intestinal worms, supports digestion, and detoxifies the body.",
+    "disadvantages": "Overuse may lead to nausea and digestive upset."
+  },
+  "mishwak": {
+    "advantages": "Improves oral health, strengthens gums, and fights bacteria.",
+    "disadvantages": "Improper use may cause gum irritation."
+  },
+  "apamarg": {
+    "advantages": "Detoxifies the body, supports kidney health, and relieves pain.",
+    "disadvantages": "Excess intake can lead to nausea and irritation."
+  },
+  "bakul": {
+    "advantages": "Strengthens gums, supports oral health, and relieves tooth pain.",
+    "disadvantages": "Overuse may cause mouth dryness."
+  },
+  "pippli chhoti": {
+    "advantages": "Improves digestion, supports respiratory health, and enhances metabolism.",
+    "disadvantages": "Overuse may cause digestive irritation or heartburn."
+  },
+  "vajradanti": {
+    "advantages": "Strengthens teeth, supports oral health, and prevents cavities.",
+    "disadvantages": "Excessive use may cause gum sensitivity."
+  },
+  "kasni": {
+    "advantages": "Supports liver health, improves digestion, and detoxifies the body.",
+    "disadvantages": "Overuse may cause dehydration or digestive issues."
+  },
+  "ginger": {
+    "advantages": "Reduces inflammation, aids digestion, and relieves nausea.",
+    "disadvantages": "Excess intake may cause heartburn or digestive discomfort."
+  },
+  "ratanjot": {
+    "advantages": "Helps to protect skin.",
+    "disadvantages": "Overuse may cause skin irritation or redness."
+  },
+  "masha": {
+    "advantages": "Nourishes muscles and bones.",
+    "disadvantages": "Excess consumption may cause digestive issues."
+  },
+  "sesame": {
+    "advantages": "Helps to nourish muscles.",
+    "disadvantages": "May cause allergic reactions in sensitive individuals."
+  },
+  "sesame oil": {
+    "advantages": "Helps to nourish muscles and bones.",
+    "disadvantages": "Overuse may lead to oily skin or breakouts."
+  },
+  "karpur": {
+    "advantages": "Helps to stimulate blood circulation.",
+    "disadvantages": "Excessive application can cause skin irritation or dizziness."
+  },
+  "nishot": {
+    "advantages": "Aids in digestion and supports liver health.",
+    "disadvantages": "Overconsumption may cause dehydration."
+  },
+  "yashti madhu": {
+    "advantages": "Known for its soothing effects on the throat and digestive system.",
+    "disadvantages": "Excessive use may increase blood pressure."
+  },
+  "jiru": {
+    "advantages": "Enhances digestion and helps reduce bloating.",
+    "disadvantages": "Overuse may cause digestive discomfort."
+  },
+  "svarjik sahara": {
+    "advantages": "Acts as a natural antacid and supports gut health.",
+    "disadvantages": "Overconsumption can cause alkalosis and digestive imbalance."
+  },
+  "galo": {
+    "advantages": "Boosts immunity and helps detoxify the body.",
+    "disadvantages": "Overuse may lead to constipation or digestive discomfort."
+  }
 }
