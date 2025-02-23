@@ -210,14 +210,11 @@
 
 // export default Check;
 
-
-
-
-
 import { useState, useEffect, useRef } from "react";
-import { Button, CircularProgress, TextField } from "@mui/material";
+import { Button, CircularProgress } from "@mui/material";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
+import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -232,6 +229,23 @@ const Check = () => {
   const [cameraOpen, setCameraOpen] = useState(false);
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
+
+  const diseaseOptions = [
+    "Constipation",
+    "Headache",
+    "Immunity",
+    "Fever",
+    "Indigestion and Bloating",
+    "Cold and Cough",
+    "Stress and Anxiety",
+    "Weakness and Fatigue",
+    "Mental Wellness",
+    "Iron Deficiency",
+    "Knee Pain and Joint Health",
+    "Joint and Muscle Pain",
+    "Stress and Memory",
+    "None",
+  ];
 
   const messages = [
     "Don't close this window, we're working on it!",
@@ -293,20 +307,26 @@ const Check = () => {
     }
   };
 
-const processIngredients = async () => {
-  if (!selectedFile || !disease.trim()) {
-    toast.error("Please upload an image and enter a disease name.", {
-      theme: "dark",
-    });
-    return;
-  }
+  const processIngredients = async () => {
+    if (!selectedFile || !disease.trim()) {
+      toast.error("Please upload an image and select a disease.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        theme: "dark",
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      return;
+    }
 
-  console.log("Sending disease:", disease); // Debugging log
+    console.log("Sending disease:", disease); // Debugging log
 
-  setIsProcessing(true);
-  const formData = new FormData();
-  formData.append("image", selectedFile);
-  formData.append("disease", disease);
+    setIsProcessing(true);
+    const formData = new FormData();
+    formData.append("image", selectedFile);
+    formData.append("disease", disease);
     try {
       const response = await axios.post(
         "http://localhost:5000/extract",
@@ -325,16 +345,36 @@ const processIngredients = async () => {
         document.body.removeChild(a);
 
         toast.success("Processing Completed! PDF has been downloaded.", {
+          position: "top-left",
+          autoClose: 2000,
+          hideProgressBar: true,
           theme: "dark",
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
         });
       } else {
         toast.error("Error processing image. Please try again.", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: true,
           theme: "dark",
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
         });
       }
     } catch (error) {
       console.error("Error processing image:", error);
-      toast.error("An error occurred while processing.", { theme: "dark" });
+      toast.error("An error occurred while processing.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        theme: "dark",
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
     } finally {
       setIsProcessing(false);
     }
@@ -343,16 +383,41 @@ const processIngredients = async () => {
   return (
     <>
       <div className="image-container">
-        <h2>Check's Ingredient Processor</h2>
-        
-        <TextField
-          label="Enter Disease Name"
-          variant="outlined"
-          fullWidth
-          value={disease}
-          onChange={(e) => setDisease(e.target.value)}
-          sx={{ marginBottom: "1rem" }}
-        />
+        <h2>HerbCure's Ingredient Processor</h2>
+
+        <FormControl fullWidth sx={{ marginBottom: "1rem" }}>
+          <InputLabel style={{ color: "#333", fontSize: "17px" }}>
+            Select Disease
+          </InputLabel>
+          <Select
+            value={disease}
+            label="Select Disease"
+            onChange={(e) => setDisease(e.target.value)}
+            sx={{
+              backgroundColor: "#CDffcd", // Light green background
+              color: "black", // Black text for better contrast
+              borderRadius: "8px",
+              "& .MuiSelect-icon": {
+                color: "black", // Dropdown arrow color
+              },
+              "& .MuiOutlinedInput-notchedOutline": {
+                borderColor: "#006400", // Dark green border
+              },
+              "&:hover .MuiOutlinedInput-notchedOutline": {
+                borderColor: "#228B22", // Forest green on hover
+              },
+              "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                borderColor: "#006400", // Keep focus border consistent (no blue)
+              },
+            }}
+          >
+            {diseaseOptions.map((option) => (
+              <MenuItem key={option} value={option}>
+                {option}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
 
         <label htmlFor="upload-input" className="upload-box">
           <CloudUploadIcon fontSize="large" color="success" />
@@ -443,4 +508,3 @@ const processIngredients = async () => {
 };
 
 export default Check;
-
